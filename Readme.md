@@ -1,7 +1,6 @@
 # Личный проект «Девайс»
 
 * Студент: [Болеслав Салтанкин](https://up.htmlacademy.ru/htmlcss/22/user/601235).
-
 * Наставник: [Дмитрий Мирошниченко](https://htmlacademy.ru/profile/id591417).
 
 
