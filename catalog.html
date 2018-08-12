@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <title>Каталог Товаров</title>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс Каталог товаров</title>
   </head>
   <body>
-    <h1>На этой странице будет создан каталог товаров</h1>
+    <h1 class="visually-hidden">Магазин Device главная страница</h1>
+
+    <header class="index-header">
+      <a class="logo" href="index.html"><img src="" alt="Логотип Интернет-магазина Device" width="" height></a>
+
+      <div class="search-form-and-user-navavigation">
+          <!-- место под форму поиска по сайту input и тд -->
+        <div class="user-block-navigation">
+          <a class="enter" href="#">Валентин Петухов</a>
+          <a class="sing-out" href="#">Выйти</a>
+          <a class="compare" href="#">Сравнить</a>
+          <a class="cort" href="#">Корзина</a>
+        </div>
+
+        <nav class="cite-navigation">
+          <ul class="catalog">
+            <li><a href="catalog.html">Каталог Товаров</a>
+              <!-- навигация при наведении -->
+              <ul class="catalog-menu">
+                <li><a class="catalog-menu-drop-down" href="#"></a></li>
+                <li><a class="catalog-menu-drop-down" href="#"></a></li>
+                <li><a class="catalog-menu-drop-down" href="#"></a></li>
+                <li><a class="catalog-menu-drop-down" href="#"></a></li>
+                <li><a class="catalog-menu-drop-down" href="#"></a></li>
+                <li><a class="catalog-menu-drop-down" href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav-delivery">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="warranty.html">Гарантия</a></li>
+            <li><a href="contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+
+
+
+
+
+
+    <footer class="index-footer">
+      <div class="footer-column-left">
+        <a href="index.html">Deveice</a>
+        <p>г.Москва, ул. Строителей, 15</p>
+      </div>
+
+      <div class="footer-column-center">
+        <div class="footer-links">
+          <a href="#">Доставка</a>
+          <a href="#">Гарантия</a>
+          <a href="#">Контакты</a>
+        </div>
+
+        <div class="footer-social">
+          <a class="social-btn  href=#">Фейсбук</a>
+          <a class="social-btn  href=#">Инстаграмм</a>
+          <a class="social-btn  href=#">Твиттер</a>
+        </div>
+      </div>
+
+      <div class="footer-column-right">
+        <div class="footer-user-block">
+            <a class="enter" href="#">Валентин Петухов</a>
+            <a class="sing-out" href="#">Выйти</a>
+            <a class="compare" href="#">Сравнить</a>
+            <a class="cort" href="#">Корзина</a>
+        </div>
+
+        <div class="tel">
+          Тел.: +7 (495) 495-95-95
+        </div>
+
+        <div class="copyright">
+          <a href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
+      </div>
+
+    </footer>
 
   </body>
 </html>
