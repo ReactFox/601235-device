@@ -5,7 +5,6 @@
     <title>HTML Academy: Девайс Каталог товаров</title>
   </head>
   <body>
-    <h1 class="visually-hidden">Магазин Device главная страница</h1>
 
     <header class="catalog-header">
       <a class="logo" href="index.html"><img src="" alt="Логотип Интернет-магазина Device" width="" height></a>
@@ -55,7 +54,7 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs=item"><a class="broadcrumps-link" href="">Главная</a></li>
           <li class="breadcrumbs=item"><a class="broadcrumps-link" href="">Каталог товаров</a></li>
-          <li class="breadcrumbs=item"><a class="broadcrumps-link" href="">Моноподы для селфи</a></li>
+          <li class="breadcrumbs=item"><a class="broadcrumps-link">Моноподы для селфи</a></li>
         </ul>
       </section>
 
@@ -68,11 +67,8 @@
             <li class="sorting-item"><a class="sorting-link" href="">По цене</a></li>
             <li class="sorting-item"><a class="sorting-link" href="">По типу</a></li>
             <li class="sorting-item"><a class="sorting-link" href="">По популярности</a></li>
-          </ul>
-
-          <ul class="sorting-up-down">
-            <li><a class="sorting-button-link" href="#"></a></li>
-            <li><a class="sorting-button-link" href="#"></a></li>
+            <li><a class="sorting-button-link" href="#">По порядку</a></li>
+            <li><a class="sorting-button-link" href="#">В обратном порядке</a></li>
           </ul>
         </div>
       </div>
@@ -85,24 +81,26 @@
       <!--Поисковая выдача товаров  -->
       <!-- Приведу в человеческий вид после добавления изображений в карточки товара -->
 
-      <div class="result-search">
-        <div class="product-cards"><img class="cards-image" src="#" alt="Сделать описание"><a class="product-link"href="#">Любительская селфи-палка</a><span class="product-price">500 руб.</span></div>
-        <div class="product-cards"><img class="cards-image" src="#" alt="Сделать описание"><a class="product-link"href="#">Профессиональная селфи-палка</a><span class="product-price">1 500 руб.</span></div>
-        <div class="product-cards"><img class="cards-image" src="#" alt="Сделать описание"><a class="product-link"href="#">Непотопляемая селфи-палка</a><span class="product-price">2 500 руб.</span></div>
-        <div class="product-cards"><img class="cards-image" src="#" alt="Сделать описание"><a class="product-link"href="#">Селфи-палка
+      <section class="result-search">
+        <ul class="product-cards-list">
+          <li class="product-cards"><img class="cards-image" src="#" alt="Сделать описание"><a class="product-link"href="#">Любительская селфи-палка</a><span class="product-price">500 руб.</span></li>
+          <li class="product-cards"><img class="cards-image" src="#" alt="Сделать описание"><a class="product-link"href="#">Профессиональная селфи-палка</a><span class="product-price">1 500 руб.</span></li>
+          <li class="product-cards"><img class="cards-image" src="#" alt="Сделать описание"><a class="product-link"href="#">Непотопляемая селфи-палка</a><span class="product-price">2 500 руб.</span></li>
+          <li class="product-cards"><img class="cards-image" src="#" alt="Сделать описание"><a class="product-link"href="#">Селфи-палка
             «Следуй за мной»</a><span class="product-price product-new">4 900 руб.</span></div>
-
-      </div>
+        </ul>
+      </section>
 
       <!-- Пагинация -->
-      <ul class="pagination">
-        <li><a class="" href="#">Назад</a></li>
-        <li><a class="" href="#"></a>1</li>
-        <li><a class="" href="#"></a>1</li>
-        <li><a class="" href="#"></a>1</li>
-        <li><a class="" href="#">Вперёд</a></li>
-      </ul>
-
+      <nav class="pagination-navigation">
+        <ul class="pagination">
+          <li><a class="" href="#">Назад</a></li>
+          <li><a class="" href="#"></a>1</li>
+          <li><a class="" href="#"></a>2</li>
+          <li><a class="" href="#"></a>3</li>
+          <li><a class="" href="#">Вперёд</a></li>
+        </ul>
+      </nav>
     </main>
 
 
