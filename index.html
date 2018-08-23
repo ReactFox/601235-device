@@ -316,7 +316,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button" href="">Подробнее о нас</a>
+          <a class="button" href="more-about-us.html">Подробнее о нас</a>
         </section>
       </section>
 
@@ -328,7 +328,7 @@
           проверить работоспособность покупки. Всякое бывает.
         </p>
         <img class="img-map" src="img/map.jpg" alt="Наш адрес: Россия, Москва, улица Строителей, 15" width="560" height="222">
-        <a class="button" href="#">Напишите нам</a>
+        <a class="button" href="write-us.html">Напишите нам</a>
       </section>
     </main>
 
@@ -372,6 +372,21 @@
     <!-- Форма для отправки ответа, потом скроем-->
     <section class="form-support">
       <h2 class="visually-hidden">Форма обращений</h2>
+      <form action="write-us.html" method="post">
+        <label for="you-name">Ваше имя:</label>
+        <input type="text" id="you-name" name="name" placeholder="Имя Фамилия">
+
+        <label for="mail">Ваш e-mail:</label>
+        <input type="email" name="mail" id="mail">
+
+        <label for="messege">Текст письма:</label>
+        <textarea name="messege" id="messege" cols="50" rows="10" placeholder="В свободой форме"></textarea>
+        <!-- размеры поля ввода скорее всего потом уберём, сейчас для доступности-->
+
+        <input type="submit" value="отправить">
+
+        <button id="close-form-support"><span class="vissualy-hidden">Закрыть</span></button>
+      </form>
     </section>
 
     <!-- Секция всплывающего окна, потом скроем-->
