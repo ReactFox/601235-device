@@ -79,15 +79,67 @@
 
       <!-- Секция основного бокового фильтра -->
       <section>
-        <!-- будут теги форм сверстаю по мере поступления ДЗ -->
+        <form action="echo.htmlacademy.ru" method="get" aria-label="Фильтр раздела каталга, выбор товара по различным категориям">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <input type="range" name="price" id="price-range">
+          </fieldset>
+
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visualy-hidden" type="checkbox" name="black" id="black">
+                <label for="black">Чёрный</label>
+              </li>
+
+              <li class="filter-option">
+                <input class="visualy-hidden" type="checkbox" name="white" id="white">
+                <label for="white">Белый</label>
+              </li>
+
+              <li class="filter-option">
+                <input class="visualy-hidden" type="checkbox" name="blue" id="blue">
+                <label for="blue">Синий</label>
+              </li>
+
+              <li class="filter-option">
+                <input class="visualy-hidden" type="checkbox" name="red" id="red">
+                <label for="red">Красный</label>
+              </li>
+
+              <li class="filter-option">
+                <input class="visualy-hidden" type="checkbox" name="pink" id="pink">
+                <label for="pink">Розовый</label>
+              </li>
+            </ul>
+
+          </fieldset>
+
+          <fieldset>
+              <legend>Bluetooth</legend>
+              <ul>
+                <li class="filter-radio">
+                  <input class="visually-hidden" type="radio" name="Bluetooth" id="yes" value="bluetooth-yes">
+                  <label for="yes">Есть</label>
+                </li>
+                <li class="filter-radio">
+                  <input class="visually-hidden" type="radio" name="Bluetooth" id="no" value="bluetooth-no">
+                  <label for="no">Нет</label>
+                </li>
+              </ul>
+          </fieldset>
+
+          <input type="submit" value="Показать">
+        </form>
       </section>
 
       <!--Поисковая выдача товаров  -->
-      <!-- Приведу в человеческий вид после добавления изображений в карточки товара -->
+
 
       <section class="result-search">
         <ul class="product-cards-list" aria-label="Результаты выдачи сортировки товара в каталоге">
-          <li class="product-cards"><img class="cards-image" src="img/item-1.jpg" alt="Фото любительской селфи-палки" width="360" height="380"><a class="product-link" href="#">Любительская селфи-палка</a><span class="product-price">500 руб.</span></li>
+          <li class="product-cards"><img class="cards-image" src="img/item-1.jpg" alt="Фото любительской селфи-палки" width="360" height="380">Любительская селфи-палка</a><span class="product-price">500 руб.</span></li>
           <li class="product-cards"><img class="cards-image" src="img/item-2.jpg" alt="Фото профессиональной селфи-палкт" width="360" height="380"><a class="product-link" href="#">Профессиональная селфи-палка</a><span class="product-price">1 500 руб.</span></li>
           <li class="product-cards"><img class="cards-image" src="img/item-3.jpg" alt="Фото непотопляемой селфи-палки" width="360" height="380"><a class="product-link" href="#">Непотопляемая селфи-палка</a><span class="product-price">2 500 руб.</span></li>
           <li class="product-cards"><img class="cards-image product-new" src="img/item-4.jpg" alt="Фото селфи-палки «Следуй за мной»" width="360" height="380"><a class="product-link" href="#">Селфи-палка
