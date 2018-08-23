@@ -7,18 +7,18 @@
   <body>
 
     <header class="catalog-header">
-      <a class="logo-top" href="index.html">Device</a>
+      <a class="logo-top" href="index.html" aria-label="Ссылка на главную страницу Магазина">Device</a>
 
       <div class="search-form-and-user-navavigation">
           <!-- место под форму поиска по сайту input и тд -->
-        <div class="user-block-navigation">
-          <a class="enter" href="#">Валентин Петухов</a>
-          <a class="sing-out" href="#">Выйти</a>
-          <a class="compare" href="#">Сравнить</a>
-          <a class="cort" href="#">Корзина</a>
-        </div>
+        <ul class="user-block-navigation" aria-label="Блок навигации пользователя">
+          <li><a class="enter" href="user-cabinet.html">Валентин Петухов</a></li>
+          <li><a class="sing-out" href="sing-out.html">Выйти</a></li>
+          <li><a class="compare" href="compare.html">Сравнить</a></li>
+          <li><a class="cort" href="cort.html">Корзина</a></li>
+        </ul>
 
-        <nav class="cite-navigation">
+        <nav class="cite-navigation" aria-label="Главная навигация по разделам каталога">
             <ul class="catalog">
               <li><a href="#">Каталог Товаров</a>
                 <!-- навигация при наведении -->
@@ -37,7 +37,7 @@
               </li>
             </ul>
 
-            <ul class="nav-service">
+            <ul class="nav-service" aria-label="Навигация по разделу дополнительной информации для пользователя">
               <li><a href="delivery.html">Доставка</a></li>
               <li><a href="warranty.html">Гарантия</a></li>
               <li><a href="contacts">Контакты</a></li>
@@ -60,15 +60,15 @@
 
       <!-- Блок верхней сортировки>  -->
       <div class="sorting-goods">
-        <div class="sorting-any">
+        <div class="sorting-any" aria-label="Сортировка товара по различным критерия">
           <p class="sorting-filter-title">Фильтр</p>
           <p class="sorting-title">Сортировка:</p>
           <ul class="soting-list">
-            <li class="sorting-item"><a class="sorting-link" href="">По цене</a></li>
-            <li class="sorting-item"><a class="sorting-link" href="">По типу</a></li>
-            <li class="sorting-item"><a class="sorting-link" href="">По популярности</a></li>
-            <li><a class="sorting-button-link" href="#">По порядку</a></li>
-            <li><a class="sorting-button-link" href="#">В обратном порядке</a></li>
+            <li class="sorting-item"><a class="sorting-link" href="sorting-to-price.html">По цене</a></li>
+            <li class="sorting-item"><a class="sorting-link" href="sorting-of-type.html">По типу</a></li>
+            <li class="sorting-item"><a class="sorting-link" href="sorting-of-popelar.html">По популярности</a></li>
+            <li><a class="sorting-button-link" href="sort-order.html">По порядку</a></li>
+            <li><a class="sorting-button-link" href="sort-reverse-order.html">В обратном порядке</a></li>
           </ul>
         </div>
       </div>
@@ -82,7 +82,7 @@
       <!-- Приведу в человеческий вид после добавления изображений в карточки товара -->
 
       <section class="result-search">
-        <ul class="product-cards-list">
+        <ul class="product-cards-list" aria-label="Результаты выдачи сортировки товара в каталоге">
           <li class="product-cards"><img class="cards-image" src="img/item-1.jpg" alt="Фото любительской селфи-палки" width="360" height="380"><a class="product-link" href="#">Любительская селфи-палка</a><span class="product-price">500 руб.</span></li>
           <li class="product-cards"><img class="cards-image" src="img/item-2.jpg" alt="Фото профессиональной селфи-палкт" width="360" height="380"><a class="product-link" href="#">Профессиональная селфи-палка</a><span class="product-price">1 500 руб.</span></li>
           <li class="product-cards"><img class="cards-image" src="img/item-3.jpg" alt="Фото непотопляемой селфи-палки" width="360" height="380"><a class="product-link" href="#">Непотопляемая селфи-палка</a><span class="product-price">2 500 руб.</span></li>
@@ -93,7 +93,7 @@
 
       <!-- Пагинация -->
       <nav class="pagination-navigation">
-        <ul class="pagination">
+        <ul class="pagination" aria-label="Навигация по страницам карточек товара">
           <li><a class="" href="#">Назад</a></li>
           <li><a class="" href="#"></a>1</li>
           <li><a class="" href="#"></a>2</li>
@@ -106,35 +106,39 @@
     <!-- Футер -->
     <footer class="catalog-footer">
       <div class="row-top">
-        <a class="logo-button" href="index.html">Device</a>
-        <ul class="footer-user-block-navigation">
-          <li class="item-footer-user-navigation"><a class="footer-link-navigation" href="#">Войти</a></li>
-          <li class="item-footer-user-navigation"><a class="footer-link-navigation" href="#">Сравнить</a></li>
-          <li class="item-footer-user-navigation"><a class="footer-link-navigation" href="#">Корзина</a></li>
+        <a class="logo-button" href="index.html" aria-label="Ссылка на главную страницу Магазина">Device</a>
+        <ul class="footer-user-block-navigation" aria-label="Блок навигации пользователя в низу страницы">
+          <li class="item-footer-user-navigation"><a class="enter" href="user-cabinet.html">Валентин Петухов</a></li>
+          <li class="item-footer-user-navigation"><a class="sing-out" href="sing-out.html">Выйти</a></li>
+          <li class="item-footer-user-navigation"><a class="compare" href="compare.html">Сравнить</a></li>
+          <li class="item-footer-user-navigation"><a class="cort" href="cort.html">Корзина</a></li>
         </ul>
       </div>
 
+
+
+
       <div class="row-middle">
-        <p class="adres">г.Москва, ул. Строителей, 15</p>
-        <ul class="footer-links">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+        <p class="adress" aria-label="Наш адрес">г.Москва, ул. Строителей, 15</p>
+        <ul class="footer-links" aria-label="Навигация по разделу дополнительной информации для пользователя внизу страницы">
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
 
-        <a class="contact-number">
+        <a class="contact-number" aria-label="Наш телефон">
           Тел.: +7 (495) 495-95-95
         </a>
       </div>
 
       <div class="row-bottom">
-        <ul class="footer-social">
-          <li class="social-item"><a class="social-btn" href="#">Фейсбук</a></li>
-          <li class="social-item"><a class="social-btn" href="#">Инстаграмм</a></li>
-          <li class="social-item"><a class="social-btn" href="#">Твиттер</a></li>
+        <ul class="footer-social" aria-label="Блок с ссылками на социальные сети">
+          <li class="social-item"><a class="social-btn" href="#" aria-label="Наша группа в Фейсбуке"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="social-item"><a class="social-btn" href="#" aria-label="Наша канал в Инстаграмме"><span class="visually-hidden">Инстаграмм</span></a></li>
+          <li class="social-item"><a class="social-btn" href="#" aria-label="Наш канал в Твиттере"><span class="visually-hidden">Твиттер</span></a></li>
         </ul>
         <div class="copyright">
-          <a href="https://htmlacademy.ru"><img src="img/logo-html-yellow.svg" alt="Логотип html-academy" width="27" height="35"></a>
+          <a href="https://htmlacademy.ru" aria-label="Ссылка на страницу HTML-Academy"><img src="img/logo-html-yellow.svg" alt="Логотип html-academy" width="27" height="35"></a>
         </div>
       </div>
     </footer>

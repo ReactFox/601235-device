@@ -12,13 +12,13 @@
 
       <div class="search-form-and-user-navavigation">
           <!-- место под форму поиска по сайту input и тд -->
-        <ul class="user-block-navigation">
-          <li><a class="enter" href="login.html">Войти</a></li>
+        <ul class="user-block-navigation" aria-label="Блок навигации пользователя">
+          <li><a class="sing-in" href="sing-in.html">Войти</a></li>
           <li><a class="compare" href="compare.html">Сравнить</a></li>
           <li><a class="cort" href="cort.html">Корзина</a></li>
         </ul>
 
-        <nav class="cite-navigation">
+        <nav class="cite-navigation" aria-label="Главная навигация по разделам каталога">
           <ul class="catalog">
             <li><a href="catalog.html">Каталог Товаров</a>
               <!-- навигация при наведении -->
@@ -331,35 +331,35 @@
     <!-- Футер -->
     <footer class="index-footer">
       <div class="row-top">
-        <a class="logo-button">Device</a>
-        <ul class="footer-user-block-navigation">
-          <li class="item-footer-user-navigation"><a class="footer-link-navigation" href="#">Войти</a></li>
-          <li class="item-footer-user-navigation"><a class="footer-link-navigation" href="#">Сравнить</a></li>
-          <li class="item-footer-user-navigation"><a class="footer-link-navigation" href="#">Корзина</a></li>
+        <a class="logo-button" aria-label="Логотип компании">Device</a>
+        <ul class="footer-user-block-navigation" aria-label="Блок навигации пользователя в низу страницы">
+          <li class="item-footer-user-navigation"><a class="sing-in" href="sing-in.html">Войти</a></li>
+          <li class="item-footer-user-navigation"><a class="compare" href="compare.html">Сравнить</a></li>
+          <li class="item-footer-user-navigation"><a class="cort" href="cort.html">Корзина</a></li>
         </ul>
       </div>
 
       <div class="row-middle">
-        <p class="adres">г.Москва, ул. Строителей, 15</p>
-        <ul class="footer-links">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+        <p class="adress" aria-label="Наш адрес">г.Москва, ул. Строителей, 15</p>
+        <ul class="footer-links" aria-label="Навигация по разделу дополнительной информации для пользователя внизу страницы">
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
 
-        <a class="contact-number">
+        <a class="contact-number" aria-label="Наш телефон">
           Тел.: +7 (495) 495-95-95
         </a>
       </div>
 
       <div class="row-bottom">
-        <ul class="footer-social">
-          <li class="social-item"><a class="social-btn" href="#">Фейсбук</a></li>
-          <li class="social-item"><a class="social-btn" href="#">Инстаграмм</a></li>
-          <li class="social-item"><a class="social-btn" href="#">Твиттер</a></li>
+        <ul class="footer-social" aria-label="Блок с ссылками на социальные сети>">
+          <li class="social-item"><a class="social-btn" href="#" aria-label="Наша группа в Фейсбуке"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="social-item"><a class="social-btn" href="#" aria-label="Наша канал в Инстаграмме"><span class="visually-hidden">Инстаграмм</span></a></li>
+          <li class="social-item"><a class="social-btn" href="#" aria-label="Наш канал в Твиттере"><span class="visually-hidden">Твиттер</span></a></li>
         </ul>
         <div class="copyright">
-          <a href="https://htmlacademy.ru"><img src="img/logo-html-yellow.svg" alt="Логотип html-academy" width="27" height="35"></a>
+          <a href="https://htmlacademy.ru" aria-label="Ссылка на страницу HTML-Academy"><img src="img/logo-html-yellow.svg" alt="Логотип html-academy" width="27" height="35"></a>
         </div>
       </div>
     </footer>
@@ -375,8 +375,6 @@
       <h2 class="visually-hidden">Интерактивная карта</h2>
       <button class="close-modal"></button>
       <img class="img-map-bottom" src="img/map-big-min.jpg" alt="Наш адрес: Россия, Москва, улица Строителей, 15" width="991" height="591">
-      <!-- Картинку карт минифицировал с 328 до  63 кб -->
-
     </section>
 
   </body>
