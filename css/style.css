@@ -1,32 +1,275 @@
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans-light-webfont.woff2") format('woff2'),
-       url("../fonts/opensans-light-webfont.woff") format('woff');
   font-weight: 300;
+  font-family: "Open Sans";
   font-style: normal;
+
+  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"),
+  url("../fonts/opensans-light-webfont.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans-regular-webfont.woff2") format('woff2'),
-       url("../fonts/opensans-regular-webfont.woff") format('woff');
   font-weight: normal;
+  font-family: "Open Sans";
   font-style: normal;
+
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
+  url("../fonts/opensans-regular-webfont.woff") format("woff");
 }
 
 @font-face {
+  font-weight: 800;
   font-family: "Gilroy";
-  src: url("../fonts/gilroyextrabold-webfont.woff2") format('woff2'),
-       url("../fonts/gilroyextrabold-webfont.woff") format('woff');
-  font-weight: bold;
   font-style: normal;
+
+  src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold-webfont.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/gilroylight-webfont.woff2") format('woff2'),
-       url("../fonts/gilroylight-webfont.woff") format('woff');
   font-weight: 300;
+  font-family: "Gilroy";
   font-style: normal;
 
+  src: url("../fonts/gilroylight-webfont.woff2") format("woff2"),
+  url("../fonts/gilroylight-webfont.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.13px;
+
+  background-color: rgb(255, 255, 255);
+}
+/* может быть поправить leter-spaicing */
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+/* header */
+
+.index-header .logo-top,
+.catalog-header .logo-top {
+  display: inline-block;
+  margin-top: 20px;
+
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 40px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.26px;
+}
+
+
+/* Надо стилизовать поиск по сайту */
+.user-block-navigation {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+.user-block-navigation a {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 36px;
+  font-family: "Open Sans";
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.15px;
+}
+.cite-navigation {
+  margin: 0;
+  padding: 0;
+}
+.catalog {
+  margin: 0;
+  padding: 0;
+
+}
+.catalog .catalog-title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 0.2;
+
+}
+
+.catalog-menu {
+  background-color: rgb(247, 226, 150);
+  padding-left: 60px;
+}
+
+.catalog-menu,
+.nav-service {
+  /* margin: 0; */
+  /* padding: 0; */
+
+  list-style-type: none;
+}
+
+.nav-service a {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 0.2;
+}
+
+
+
+.catalog-menu .catalog-menu-drop-down {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 36px;
+  font-family: "Open Sans";
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.15px;
+}
+
+.slider-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-item .slide-title {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+
+  letter-spacing: 0.17px;
+}
+.slide-number {
+  font-size: 179.2px;
+  font-weight: 800;
+  font-family: "Gilroy","Arial", sans-serif;
+  line-height: 179.2px;
+  letter-spacing: 0.36px;
+  /* Потом раскоментируем цвет, а то сейчас не видно будет цифры */
+  /* color: rgb(255, 255, 255); */
+}
+
+.slider-item .btn {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+}
+.table-character td {
+
+color: rgb(0, 0, 0);
+font-family: "Gilroy","Arial", sans-serif;
+font-size: 36px;
+font-weight: 300;
+line-height: 48px;
+letter-spacing: 0.36px;
+}
+
+.table-character th {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans","Arial", sans-serif;
+
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.13px;
+
+}
+
+.product-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.product-list .product-title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.18px;
+}
+
+.brands-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 1160px;
+
+}
+.about-and-contacts h3 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+
+  letter-spacing: 0.21px;
+  margin: 0;
+  padding: 0;
+}
+
+.index-footer,
+.catalog-footer {
+  background-color: rgb(70, 70, 70);
 }
