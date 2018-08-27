@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Open Sans";
   font-style: normal;
 
@@ -43,7 +43,7 @@ body {
   line-height: 30px;
   font-family: "Open Sans","Arial", sans-serif;
   color: rgb(0, 0, 0);
-  letter-spacing: 0.13px;
+  letter-spacing: 0.15px;
 
   background-color: rgb(255, 255, 255);
 }
@@ -51,6 +51,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -86,7 +87,7 @@ html {
 
 .index-header .logo-top,
 .catalog-header .logo-top {
-  display: inline-block;
+  /* display: inline-block; */
   margin-top: 20px;
 
   font-weight: bold;
@@ -99,22 +100,103 @@ html {
   letter-spacing: 0.26px;
 }
 
+.catalog-header .logo-top:hover,
+.catalog-header .logo-top:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
 
-/* Надо стилизовать поиск по сайту */
+.catalog-header .logo-top:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Форма поиска по сайту */
+.search-form-and-user-navavigation input[type="search"] {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid transparent;
+}
+
+.search-form-and-user-navavigation input[type="search"]:hover {
+  border-bottom: 2px solid black;
+
+}
+
+
+/*
+.search-form-and-user-navavigation input[type="search"]:hover {
+  border: 1px;
+} */
+.search-btn {
+  border: 2px solid black;
+  background-color: rgb(247, 226, 150);
+  /* display: none; */
+}
+
+
+.search-form-and-user-navavigation input[type="search"]::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1px;
+}
+
+.search-form-and-user-navavigation input[type="search"]::-moz-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  /* line-height: 36px; */
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1px;
+}
+
+.search-form-and-user-navavigation input[type="search"]:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  /* line-height: 30px; */
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1px;
+}
+
+.search-form-and-user-navavigation input[type="search"] {
+  font-weight: 300;
+  font-size: 15px;
+  /* line-height: 36px; */
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1px;
+}
+
+
+
+
 .user-block-navigation {
   margin: 0;
   padding: 0;
 
-  list-style-type: none;
+  list-style: none;
 }
+
 .user-block-navigation a {
   font-weight: 300;
   font-size: 15px;
   line-height: 36px;
-  font-family: "Open Sans";
+  font-family: "Open Sans","Arial", sans-serif;
   color: rgb(0, 0, 0);
   letter-spacing: 0.15px;
 }
+
+.user-block-navigation a:hover,
+.user-block-navigation a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-block-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .cite-navigation {
   margin: 0;
   padding: 0;
@@ -122,8 +204,8 @@ html {
 .catalog {
   margin: 0;
   padding: 0;
-
 }
+
 .catalog .catalog-title {
   font-weight: 800;
   font-size: 18px;
@@ -132,21 +214,49 @@ html {
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   letter-spacing: 0.2;
-
 }
 
+.catalog .catalog-title:hover,
+.catalog .catalog-title:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog .catalog-title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
 .catalog-menu {
-  background-color: rgb(247, 226, 150);
   padding-left: 60px;
+
+  background-color: rgb(247, 226, 150);
 }
 
 .catalog-menu,
 .nav-service {
   /* margin: 0; */
   /* padding: 0; */
-
   list-style-type: none;
 }
+
+
+.catalog-menu .catalog-link {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 36px;
+  font-family: "Open Sans";
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.15px;
+}
+.catalog-menu .catalog-link:hover,
+.catalog-menu .catalog-link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-menu .catalog-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 
 .nav-service a {
   font-weight: 800;
@@ -158,21 +268,21 @@ html {
   letter-spacing: 0.2;
 }
 
-
-
-.catalog-menu .catalog-menu-drop-down {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 36px;
-  font-family: "Open Sans";
-  color: rgb(0, 0, 0);
-  letter-spacing: 0.15px;
+.nav-service a:hover,
+.nav-service a:focus {
+  color: rgba(0, 0, 0, 0.6);
 }
 
+.nav-service a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Слайдер */
 .slider-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .slider-item .slide-title {
@@ -181,14 +291,13 @@ html {
   line-height: 56px;
   font-family: "Gilroy","Arial", sans-serif;
   color: rgb(0, 0, 0);
-
   letter-spacing: 0.17px;
 }
 .slide-number {
-  font-size: 179.2px;
   font-weight: 800;
-  font-family: "Gilroy","Arial", sans-serif;
+  font-size: 179.2px;
   line-height: 179.2px;
+  font-family: "Gilroy","Arial", sans-serif;
   letter-spacing: 0.36px;
   /* Потом раскоментируем цвет, а то сейчас не видно будет цифры */
   /* color: rgb(255, 255, 255); */
@@ -203,14 +312,18 @@ html {
   text-transform: uppercase;
   letter-spacing: 2.15px;
 }
-.table-character td {
 
-color: rgb(0, 0, 0);
-font-family: "Gilroy","Arial", sans-serif;
-font-size: 36px;
-font-weight: 300;
-line-height: 48px;
-letter-spacing: 0.36px;
+.slider-item .btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.table-character td {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.36px;
 }
 
 .table-character th {
@@ -221,23 +334,31 @@ letter-spacing: 0.36px;
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans","Arial", sans-serif;
-
   color: rgb(0, 0, 0);
   letter-spacing: 0.13px;
-
+}
+.table-character td {
+  margin: 0;
+  padding: 0;
 }
 
+/* Блок товаров по категориям */
 .product-list {
   display: flex;
-  align-items: stretch;
   justify-content: space-between;
+  align-items: stretch;
   width: 1160px;
   margin: 0 auto;
   padding: 0;
 
   list-style: none;
 }
-
+/* .product-category-link:hover h3 {
+  color: rgba(0, 0, 0, 0.3);
+} */
+.product-item:hover h3{
+  color: rgba(0, 0, 0, 0.3);
+}
 
 .product-list .product-title {
   font-weight: 800;
@@ -248,28 +369,368 @@ letter-spacing: 0.36px;
   letter-spacing: 0.18px;
 }
 
-.brands-list {
-  list-style: none;
-  margin: 0 auto;
+/* Блок преимущества */
+.features-navigation,
+.content-feature-navigation {
   padding: 0;
-  display: flex;
-  justify-content: space-around;
-  width: 1160px;
 
+  list-style: none;
 }
-.about-and-contacts h3 {
+
+.navigation-item label {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+}
+
+.features-title {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy","Arial", sans-serif;
   color: rgb(0, 0, 0);
-
   letter-spacing: 0.21px;
+}
+
+/* Бренды  */
+
+.brands-list {
+  display: flex;
+  justify-content: space-around;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+/* Блок о нас и контакты */
+
+.about-and-contacts h3 {
   margin: 0;
   padding: 0;
+
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.21px;
 }
+
+.about-and-contacts p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0;
+}
+
+.about ul {
+  padding: 0;
+  padding-left: 35px;
+  list-style: none;
+}
+
+.about li {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 40px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0;
+}
+
+.about-and-contacts a {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+}
+
+.about-and-contacts a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Футер */
 
 .index-footer,
 .catalog-footer {
+  padding-top: 64px;
   background-color: rgb(70, 70, 70);
 }
+
+.index-footer ul,
+.catalog-footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.index-footer a,
+.catalog-footer a {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 36px;
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.footer-user-block-navigation a {
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.15px;
+}
+
+.footer-user-block-navigation a:hover,
+.footer-user-block-navigation a:focus {
+  color: rgb(255, 255, 255);
+}
+
+.footer-user-block-navigation a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer-links a {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-links a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.row-middle .adress {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 36px;
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.footer-social a {
+  /* font-size: 0; */
+  /* потом спрячем название соцсетей */
+}
+
+.index-footer .logo-button,
+.catalog-footer .logo-button {
+  /* margin-top: 20px; */
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 40px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: rgb(255, 198, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.26px;
+}
+
+.catalog-footer .logo-button:hover,
+.catalog-footer .logo-button:focus {
+  color: rgba(255, 198, 0, 0.6);
+}
+
+.catalog-footer .logo-button:active {
+  color: rgba(255, 198, 0, 0.3);
+}
+
+/* Форма обратной связи */
+
+.form-write label{
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2.15px;
+}
+
+.form-write input {
+  background-color: rgb(242,242,242);
+  border: 3px solid transparent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.15px;
+}
+.form-write input:hover {
+  background-color: rgb(235, 235, 235);
+  border: 3px solid transparent;
+}
+.form-write input:focus {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(247, 226, 150);
+  outline: none;
+}
+.form-write textarea {
+  background-color: rgb(242, 242, 242);
+  border: 3px solid transparent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.15px;
+  resize: none;
+}
+
+.form-write textarea:hover {
+  background-color: rgb(235, 235, 235);
+  border: 3px solid transparent;
+}
+
+.form-write textarea:focus {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(247, 226, 150);
+  outline: none;
+}
+
+.form-write button[type="submit"] {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Стили каталога */
+
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+}
+.broadcrumps-link {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 36px;
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.15px;
+}
+.broadcrumps-link:hover,
+.broadcrumps-link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.broadcrumps-link:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+.current-crumbs:hover,
+.current-crumbs:focus,
+.current-crumbs:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Шапка сортировки товаров */
+.sorting-goods p {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 0.2;
+}
+
+.soting-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sorting-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-link:hover,
+.sorting-link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-link:active {
+  color: rgb(0, 0, 0);
+}
+
+/* Боковой фильтр */
+.filter-list {
+  list-style: none;
+  padding: 0;
+}
+
+.filter-search fieldset {
+  border: none;
+}
+
+.filter-search legend {
+  padding-top: 20px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.2;
+  border-top: 2px solid rgb(0, 0, 0);
+  width: 100%;
+}
+
+.filter-search label {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+  font-family: "Open Sans","Arial", sans-serif;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.15px;
+}
+
+/* заблокированный переключатель */
+.label-block {
+  color: rgb(166, 166, 166);
+}
+
+.filter-search button {
+  font-weight: 800;
+  font-size: 18px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+.filter-search button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* продолжить стилизацию карточек и пагинации */

@@ -18,8 +18,8 @@
             <label for="search" class="visually-hidden">
               Поиск по сайту
             </label>
-            <input type="search" id="search" name="search" placeholder="Поиск по сайту">
-            <button type="submit">
+            <input class="search-intput" type="search" id="search" name="search" placeholder="Поиск по сайту">
+            <button class="search-btn" type="submit">
               Найти
             </button>
         </form>
@@ -44,26 +44,26 @@
                 <!-- навигация при наведении -->
                 <ul class="catalog-menu">
                   <li>
-                    <a class="catalog-menu-drop-down" href="reality.html">Виртуальная реальность</a>
+                    <a class="catalog-link" href="reality.html">Виртуальная реальность</a>
                   </li>
                   <li>
-                    <a class="catalog-menu-drop-down" href="#">Монопады для селфи</a>
+                    <a class="catalog-link" href="#">Монопады для селфи</a>
                   </li>
                   <li>
-                    <a class="catalog-menu-drop-down" href="action-cam.html">Экшн-камеры</a>
-                  </li>
-                </ul>
-                <ul class="catalog-menu">
-                  <li>
-                    <a class="catalog-menu-drop-down" href="fitness-trackers.html">фитнесc-браслеты</a>
-                  </li>
-                  <li>
-                    <a class="catalog-menu-drop-down" href="clock.html">Умные часы</a>
+                    <a class="catalog-link" href="action-cam.html">Экшн-камеры</a>
                   </li>
                 </ul>
                 <ul class="catalog-menu">
                   <li>
-                    <a class="catalog-menu-drop-down" href="quadrocopters.html">Квадракоптеры</a>
+                    <a class="catalog-link" href="fitness-trackers.html">фитнесc-браслеты</a>
+                  </li>
+                  <li>
+                    <a class="catalog-link" href="clock.html">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="catalog-menu">
+                  <li>
+                    <a class="catalog-link" href="quadrocopters.html">Квадракоптеры</a>
                   </li>
                 </ul>
               </li>
@@ -83,16 +83,17 @@
       <!-- Секция каталога товаров -->
       <section class="section-catalog">
         <h1 class="title-catalog">Монопады для селфи</h1>
+
         <ul class="breadcrumbs">
-          <li class="breadcrumbs=item">
+          <li class="breadcrumbs-item">
             <a class="broadcrumps-link" href="">Главная</a>
           </li>
 
-          <li class="breadcrumbs=item">
+          <li class="breadcrumbs-item">
             <a class="broadcrumps-link" href="">Каталог товаров</a>
           </li>
-          <li class="breadcrumbs=item">
-            <a class="broadcrumps-link">Моноподы для селфи</a>
+          <li class="breadcrumbs-item">
+            <a class="broadcrumps-link current-crumbs">Моноподы для селфи</a>
           </li>
         </ul>
       </section>
@@ -116,11 +117,11 @@
             </li>
 
             <li>
-              <a class="sorting-button-link" href="#">По порядку</a>
+              <a class="sorting-button-link" href="#"><span class="visually-hidden">По порядку</span></a>
             </li>
 
             <li>
-              <a class="sorting-button-link" href="#">В обратном порядке</a>
+              <a class="sorting-button-link" href="#"><span class="visually-hidden">В обратном порядке</span></a>
             </li>
           </ul>
         </div>
@@ -131,37 +132,38 @@
         <h2 class="visually-hidden">Фильтр раздела каталга</h2>
 
         <form action="https://echo.htmlacademy.ru" method="POST" aria-label="Фильтр раздела каталга, выбор товара по различным категориям">
-          <div class="range">
+          <fieldset class="range">
+            <legend>Стоимость</legend>
             <span>От 0</span>
             <span>До 5000</span>
             <!-- окончательнос размечу в момент стиллизации  -->
-          </div>
+          </fieldset>
 
           <fieldset>
             <legend>Цвет</legend>
-            <ul>
+            <ul class="filter-list">
               <li class="filter-option">
-                <input class="visualy-hidden" type="checkbox" name="black" id="black" checked>
+                <input class="visually-hidden" type="checkbox" name="black" id="black" checked>
                 <label for="black">Чёрный</label>
               </li>
 
               <li class="filter-option">
-                <input class="visualy-hidden" type="checkbox" name="white" id="white">
+                <input class="visually-hidden" type="checkbox" name="white" id="white">
                 <label for="white">Белый</label>
               </li>
 
               <li class="filter-option">
-                <input class="visualy-hidden" type="checkbox" name="blue" id="blue" checked>
+                <input class="visually-hidden" type="checkbox" name="blue" id="blue" checked>
                 <label for="blue">Синий</label>
               </li>
 
               <li class="filter-option">
-                <input class="visualy-hidden" type="checkbox" name="red" id="red" checked>
+                <input class="visually-hidden" type="checkbox" name="red" id="red" checked>
                 <label for="red">Красный</label>
               </li>
 
               <li class="filter-option">
-                <input class="visualy-hidden" type="checkbox" name="pink" id="pink">
+                <input class="visually-hidden" type="checkbox" name="pink" id="pink">
                 <label for="pink">Розовый</label>
               </li>
             </ul>
@@ -170,7 +172,7 @@
 
           <fieldset>
               <legend>Bluetooth</legend>
-              <ul>
+              <ul class="filter-list">
                 <li class="filter-radio">
                   <input class="visually-hidden" type="radio" name="Bluetooth" id="yes" value="bluetooth-yes" checked>
                   <label for="yes">Есть</label>

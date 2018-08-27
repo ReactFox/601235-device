@@ -16,7 +16,7 @@
         <form action="https://echo.htmlacademy.ru" method="get" aria-label="Форма поиска по сайту">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
           <input type="search" id="search" name="search" placeholder="Поиск по сайту">
-          <button type="submit">Найти</button>
+          <button class="search-btn" type="submit">Найти</button>
         </form>
 
         <ul class="user-block-navigation" aria-label="Блок навигации пользователя">
@@ -39,26 +39,26 @@
               <!-- навигация при наведении -->
               <ul class="catalog-menu">
                 <li>
-                  <a class="catalog-menu-drop-down" href="reality.html">Виртуальная реальность</a>
+                  <a class="catalog-link" href="reality.html">Виртуальная реальность</a>
                 </li>
                 <li>
-                  <a class="catalog-menu-drop-down" href="catalog.html">Моноподы для селфи</a>
+                  <a class="catalog-link" href="catalog.html">Моноподы для селфи</a>
                 </li>
                 <li>
-                  <a class="catalog-menu-drop-down" href="action-cam.html">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="catalog-menu">
-                <li>
-                  <a class="catalog-menu-drop-down" href="fitness-trackers.html">фитнесc-браслеты</a>
-                </li>
-                <li>
-                  <a class="catalog-menu-drop-down" href="clock.html">Умные часы</a>
+                  <a class="catalog-link" href="action-cam.html">Экшн-камеры</a>
                 </li>
               </ul>
               <ul class="catalog-menu">
                 <li>
-                  <a class="catalog-menu-drop-down" href="quadrocopters.html">Квадракоптеры</a>
+                  <a class="catalog-link" href="fitness-trackers.html">фитнесc-браслеты</a>
+                </li>
+                <li>
+                  <a class="catalog-link" href="clock.html">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="catalog-menu">
+                <li>
+                  <a class="catalog-link" href="quadrocopters.html">Квадракоптеры</a>
                 </li>
               </ul>
             </li>
@@ -188,7 +188,7 @@
             <a class="product-category-link" href="#">
               <img src="img/popular-1.svg" alt="Лого Виртуальная реальность" width="97" height="55">
               <h3 class="product-title">
-                  Виртуальная реальность
+                Виртуальная реальность
               </h3>
             </a>
           </li>
@@ -197,7 +197,7 @@
             <a class="product-category-link" href="#">
               <img src="img/popular-2.svg" alt="Лого Моноподы для селфи" width="86" height="117">
               <h3 class="product-title">
-                  Моноподы для селфи
+                Моноподы для селфи
               </h3>
             </a>
           </li>
@@ -206,7 +206,7 @@
             <a class="product-category-link" href="#">
               <img src="img/popular-3.svg" alt="Лого Экшн-камеры" width="71" height="87">
               <h3 class="product-title">
-                  Экшн-камеры
+                Экшн-камеры
               </h3>
             </a>
           </li>
@@ -215,7 +215,7 @@
             <a class="product-category-link" href="#">
               <img src="img/popular-4.svg" alt="Лого Фитнес-браслеты" width="107" height="65">
               <h3 class="product-title">
-                  Фитнес-браслеты
+                Фитнес-браслеты
               </h3>
             </a>
           </li>
@@ -224,16 +224,16 @@
             <a class="product-category-link" href="#">
               <img src="img/popular-5.svg" alt="Лого Умные часы" width="56" height="98">
               <h3 class="product-title">
-                  Умные часы
+                Умные часы
               </h3>
             </a>
           </li>
 
           <li class="product-item">
-            <img src="img/popular-6.svg" alt="Лого Квадрокоптеры" width="132" height="69">
             <a class="product-category-link" href="#">
+            <img src="img/popular-6.svg" alt="Лого Квадрокоптеры" width="132" height="69">
               <h3 class="product-title">
-                  Квадрокоптеры
+                Квадрокоптеры
               </h3>
             </a>
           </li>
@@ -430,7 +430,7 @@
     <!-- Форма для отправки ответа, потом скроем-->
     <section class="form-support">
       <h2 class="visually-hidden">Форма обращений</h2>
-      <form action="write-us.html" method="post">
+      <form class="form-write" action="write-us.html" method="post">
         <label for="you-name">Ваше имя:</label>
         <input type="text" id="you-name" name="name" placeholder="Имя Фамилия">
 
