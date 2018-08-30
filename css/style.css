@@ -42,10 +42,10 @@ body {
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0.15px;
 
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
 }
 /* может быть поправить leter-spaicing */
 
@@ -90,11 +90,11 @@ html {
   /* display: inline-block; */
   margin-top: 20px;
 
-  font-weight: bold;
+  font-weight: 800;
   font-size: 48px;
   line-height: 40px;
   font-family: "Gilroy", "Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.26px;
@@ -127,7 +127,7 @@ html {
   border: 1px;
 } */
 .search-btn {
-  background-color: rgb(247, 226, 150);
+  background-color: #f7e296;
   border: 2px solid black;
   /* display: none; */
 }
@@ -181,9 +181,9 @@ html {
 .user-block-navigation a {
   font-weight: 300;
   font-size: 15px;
-  line-height: 36px;
+  line-height: 30px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0.15px;
 }
 
@@ -199,8 +199,9 @@ html {
 .user-block-navigation .sing-out {
   color: rgba(0, 0, 0, 0.3);
 }
+
 .user-block-navigation .sing-out:active {
-  color: rgb(0, 0, 0);
+  color: #000;
 }
 
 .cite-navigation {
@@ -217,9 +218,9 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   text-transform: uppercase;
-  letter-spacing: 0.2;
+  letter-spacing: 3.6px;
 }
 
 .catalog .catalog-title:hover,
@@ -231,11 +232,10 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
-
 .catalog-menu {
   padding-left: 60px;
-
-  background-color: rgb(247, 226, 150);
+  display: none;
+  background-color: #f7e296;
 }
 
 .catalog-menu,
@@ -245,15 +245,10 @@ html {
   list-style-type: none;
 }
 
-
 .catalog-menu .catalog-link {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 36px;
-  font-family: "Open Sans";
-  color: rgb(0, 0, 0);
-  letter-spacing: 0.15px;
+  color: #000;
 }
+
 .catalog-menu .catalog-link:hover,
 .catalog-menu .catalog-link:focus {
   color: rgba(0, 0, 0, 0.6);
@@ -263,15 +258,14 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
-
 .nav-service a {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   text-transform: uppercase;
-  letter-spacing: 0.2;
+  letter-spacing: 0.36px;
 }
 
 .nav-service a:hover,
@@ -296,7 +290,7 @@ html {
   font-size: 47px;
   line-height: 56px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0.17px;
 }
 .slide-number {
@@ -306,7 +300,7 @@ html {
   font-family: "Gilroy","Arial", sans-serif;
   letter-spacing: 0.36px;
   /* Потом раскоментируем цвет, а то сейчас не видно будет цифры */
-  /* color: rgb(255, 255, 255); */
+  /* color: #fff; */
 }
 
 .slider-item .btn {
@@ -314,7 +308,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 2.15px;
 }
@@ -328,7 +322,7 @@ html {
   font-size: 36px;
   line-height: 48px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0.36px;
 }
 
@@ -340,9 +334,10 @@ html {
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0.13px;
 }
+
 .table-character td {
   margin: 0;
   padding: 0;
@@ -350,19 +345,25 @@ html {
 
 /* Блок товаров по категориям */
 .product-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0;
-
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-/* .product-category-link:hover h3 {
-  color: rgba(0, 0, 0, 0.3);
-} */
-.product-item:hover h3 {
+
+.product-item {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.product-item:hover,
+.product-item:focus {
+  background-color: #f0c52e;
+}
+
+.product-item:active {
+  background-color: #f0c52e;
+}
+
+.product-item:active h3 {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -371,11 +372,17 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0.18px;
 }
 
 /* Блок преимущества */
+.features {
+  background-color: #e5e5e5;
+}
+
+
+
 .features-navigation,
 .content-feature-navigation {
   padding: 0;
@@ -388,7 +395,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 2.15px;
 }
@@ -398,7 +405,7 @@ html {
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0.21px;
 }
 
@@ -423,7 +430,7 @@ html {
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0.21px;
 }
 
@@ -432,7 +439,7 @@ html {
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0;
 }
 
@@ -451,7 +458,7 @@ html {
   font-size: 16px;
   line-height: 40px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0;
 }
 
@@ -460,7 +467,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 2.15px;
 }
@@ -478,7 +485,7 @@ html {
 .catalog-footer {
   padding-top: 64px;
 
-  background-color: rgb(70, 70, 70);
+  background-color: #464646;
 }
 
 .index-footer ul,
@@ -494,7 +501,7 @@ html {
   font-size: 15px;
   line-height: 36px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: rgb(255, 255, 255);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -505,7 +512,7 @@ html {
 
 .footer-user-block-navigation a:hover,
 .footer-user-block-navigation a:focus {
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
 .footer-user-block-navigation a:active {
@@ -516,7 +523,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(255, 255, 255);
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
@@ -535,7 +542,7 @@ html {
   font-size: 15px;
   line-height: 36px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: rgb(255, 255, 255);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -551,7 +558,7 @@ html {
   font-size: 48px;
   line-height: 40px;
   font-family: "Gilroy", "Arial", sans-serif;
-  color: rgb(255, 198, 0);
+  color: #ffc600;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.26px;
@@ -566,14 +573,17 @@ html {
   color: rgba(255, 198, 0, 0.3);
 }
 
-/* Форма обратной связи */
+/* Форма обратной связи поп-ап*/
+.form-support {
+  display: none;
+}
 
 .form-write label {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 2.15px;
 }
 
@@ -582,19 +592,19 @@ html {
   font-size: 14px;
   line-height: 18px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0.15px;
 
-  background-color: rgb(242,242,242);
+  background-color: #f2f2f2;
   border: 3px solid transparent;
 }
 .form-write input:hover {
-  background-color: rgb(235, 235, 235);
+  background-color: #ebebeb;
   border: 3px solid transparent;
 }
 .form-write input:focus {
-  background-color: rgb(255, 255, 255);
-  border: 3px solid rgb(247, 226, 150);
+  background-color: #fff;
+  border: 3px solid #f7e296;
   outline: none;
 }
 .form-write textarea {
@@ -602,23 +612,23 @@ html {
   font-size: 14px;
   line-height: 18px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0.15px;
 
-  background-color: rgb(242, 242, 242);
+  background-color: #f2f2f2;
   border: 3px solid transparent;
 
   resize: none;
 }
 
 .form-write textarea:hover {
-  background-color: rgb(235, 235, 235);
+  background-color: #ebebeb;
   border: 3px solid transparent;
 }
 
 .form-write textarea:focus {
-  background-color: rgb(255, 255, 255);
-  border: 3px solid rgb(247, 226, 150);
+  background-color: #fff;
+  border: 3px solid #f7e296;
   outline: none;
 }
 
@@ -627,29 +637,32 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   border: none;
 }
 
-/* Стили каталога */
+/* Карта поп-ап */
+.modal-map {
+  display: none;
+}
+
+/* Стили каталога  товаров*/
 
 .breadcrumbs {
   padding: 0;
 
   list-style: none;
 }
+
 .broadcrumps-link {
-  font-weight: 300;
-  font-size: 14px;
   line-height: 36px;
-  font-family: "Open Sans","Arial", sans-serif;
   color: rgba(0, 0, 0, 0.3);
-  letter-spacing: 0.15px;
 }
+
 .broadcrumps-link:hover,
 .broadcrumps-link:focus {
   color: rgba(0, 0, 0, 0.6);
@@ -670,9 +683,9 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   text-transform: uppercase;
-  letter-spacing: 0.2;
+  letter-spacing: 0.91px;
 }
 
 .soting-list {
@@ -683,9 +696,7 @@ html {
 
 .sorting-link {
   font-weight: 400;
-  font-size: 14px;
   line-height: 18px;
-  font-family: "Open Sans","Arial", sans-serif;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -695,7 +706,7 @@ html {
 }
 
 .sorting-link:active {
-  color: rgb(0, 0, 0);
+  color: #000;
 }
 
 /* Боковой фильтр */
@@ -717,35 +728,34 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 3.6px;
 
-  border-top: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid #000;
 }
 
 .filter-search label {
   font-weight: 300;
   font-size: 14px;
   line-height: 40px;
-  font-family: "Open Sans","Arial", sans-serif;
-  color: rgba(0, 0, 0, 1);
-  letter-spacing: 0.15px;
+
+  color: #000;
 }
 
 /* заблокированный переключатель */
 .label-block {
-  color: rgb(166, 166, 166);
+  color: #a6a6a6;
 }
 
 .filter-search button {
   font-weight: 800;
   font-size: 18px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   border: none;
 }
 
@@ -767,7 +777,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 0.24px;
 }
 
@@ -776,7 +786,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(70, 70, 70);
+  color: #464646;
   letter-spacing: 0.24px;
 }
 
@@ -785,7 +795,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 3.6px;
 }
 
@@ -794,24 +804,21 @@ html {
 }
 
 .product-option .add-to-compare {
-  font-weight: 300;
   font-size: 13px;
   line-height: 36px;
-  font-family: "Open Sans","Arial", sans-serif;
   color: rgba(0, 0, 0, 0.5);
-  letter-spacing: 0.15px;
 }
 
 .product-option .add-to-compare:hover,
 .product-option .add-to-compare:focus {
-  color: rgb(0, 0, 0);
+  color: #000;
 }
 
 .product-option .add-to-compare:active {
   color: rgba(0, 0, 0, 0.2);
 }
 
-/* Пгинация */
+/* Пагинация */
 
 .pagination {
   margin: 0;
@@ -835,19 +842,19 @@ html {
 }
 
 .pagination a:active {
-  color: rgb(0, 0, 0);
+  color: #000;
 }
 
 .pagination .current-nuber,
 .pagination .current-nuber:hover,
 .pagination .current-nuber:active {
-  color: rgb(0, 0, 0);
+  color: #000;
 }
 
 .pagination .pagination-farther,
 .pagination .pagination-farther:hover,
 .pagination .pagination-farther:focus {
-  color: rgb(0, 0, 0);
+  color: #000;
   /* в будущем добавим цвет фона состояния */
 }
 
