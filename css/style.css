@@ -42,10 +42,10 @@ body {
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 0.15px;
 
-  background-color: #fff;
+  background-color: #ffffff;
 }
 /* может быть поправить leter-spaicing */
 
@@ -83,18 +83,37 @@ html {
   clip: rect(0 0 0 0);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.wraper-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+
 /* header */
+.index-header,
+.catalog-header {
+  padding-top: 21px;
+  padding-bottom: 55px;
+}
 
 .index-header .logo-top,
 .catalog-header .logo-top {
-  /* display: inline-block; */
-  margin-top: 20px;
+  margin-right: auto;
+  margin-left: 60px;
 
   font-weight: 800;
   font-size: 48px;
   line-height: 40px;
   font-family: "Gilroy", "Arial", sans-serif;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.26px;
@@ -183,7 +202,7 @@ html {
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 0.15px;
 }
 
@@ -201,7 +220,7 @@ html {
 }
 
 .user-block-navigation .sing-out:active {
-  color: #000;
+  color: #000000;
 }
 
 .cite-navigation {
@@ -211,6 +230,8 @@ html {
 .catalog {
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .catalog .catalog-title {
@@ -218,7 +239,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
@@ -232,21 +253,34 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-menu {
-  padding-left: 60px;
+.menu-drop-down {
+  /* display: flex; */
   display: none;
+
   background-color: #f7e296;
 }
 
+.catalog-menu {
+  width: 220px;
+  margin-right: 20px;
+}
+
+
+
+.nav-service {
+  margin: 0;
+  padding: 0;
+}
 .catalog-menu,
 .nav-service {
-  /* margin: 0; */
-  /* padding: 0; */
+  margin: 0;
+  padding: 0;
+
   list-style-type: none;
 }
 
 .catalog-menu .catalog-link {
-  color: #000;
+  color: #000000;
 }
 
 .catalog-menu .catalog-link:hover,
@@ -263,7 +297,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.36px;
 }
@@ -280,9 +314,29 @@ html {
 /* Слайдер */
 .slider-list {
   margin: 0;
+  margin-right: 60px;
+  margin-bottom: 100px;
+  margin-left: 60px;
   padding: 0;
 
   list-style: none;
+}
+
+.slider-item {
+  display: flex;
+}
+.slider-image {
+  flex-shrink: 0;
+  width: 520px;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+.item-description {
+  flex-shrink: 0;
+  width: 600px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .slider-item .slide-title {
@@ -290,7 +344,7 @@ html {
   font-size: 47px;
   line-height: 56px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 0.17px;
 }
 .slide-number {
@@ -298,6 +352,7 @@ html {
   font-size: 179.2px;
   line-height: 179.2px;
   font-family: "Gilroy","Arial", sans-serif;
+  color: gray; /*цвет времменно*/
   letter-spacing: 0.36px;
   /* Потом раскоментируем цвет, а то сейчас не видно будет цифры */
   /* color: #fff; */
@@ -308,7 +363,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 2.15px;
 }
@@ -322,7 +377,7 @@ html {
   font-size: 36px;
   line-height: 48px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 0.36px;
 }
 
@@ -334,7 +389,7 @@ html {
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 0.13px;
 }
 
@@ -345,67 +400,101 @@ html {
 
 /* Блок товаров по категориям */
 .product-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .product-item {
+  flex-shrink: 0;
+  width: 160px;
+
+  cursor: pointer;
+}
+.product-item .wraper-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  margin-bottom: 35px;
+
   background-color: rgba(240, 197, 46, 0.5);
 }
 
-.product-item:hover,
-.product-item:focus {
+.product-item:hover .wraper-img,
+.product-item:focus .wraper-img {
   background-color: #f0c52e;
 }
 
-.product-item:active {
+.product-item:active .wraper-img {
   background-color: #f0c52e;
+  opacity: 0.5;
 }
 
-.product-item:active h3 {
+.product-item:active a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.product-list .product-title {
+.product-item a {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 0.18px;
 }
 
 /* Блок преимущества */
 .features {
+  padding-top: 70px;
+
   background-color: #e5e5e5;
 }
 
-
-
+.features .container {
+  display: flex;
+}
 .features-navigation,
 .content-feature-navigation {
+  margin: 0;
   padding: 0;
 
   list-style: none;
 }
+
+.features-navigation {
+  width: 380px;
+  padding-right: 20px;
+}
+
+.content-feature-navigation {
+  width: 780px;
+  padding-left: 20px;
+}
+
 
 .navigation-item label {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 2.15px;
 }
 
 .features-title {
+  margin-top: 0;
+
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 0.21px;
 }
 
@@ -422,6 +511,10 @@ html {
 }
 /* Блок о нас и контакты */
 
+.about-and-contacts {
+  display: flex;
+}
+
 .about-and-contacts h3 {
   margin: 0;
   padding: 0;
@@ -430,7 +523,7 @@ html {
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 0.21px;
 }
 
@@ -439,7 +532,7 @@ html {
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 0;
 }
 
@@ -458,7 +551,7 @@ html {
   font-size: 16px;
   line-height: 40px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 0;
 }
 
@@ -467,7 +560,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 2.15px;
 }
@@ -501,7 +594,7 @@ html {
   font-size: 15px;
   line-height: 36px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -512,7 +605,7 @@ html {
 
 .footer-user-block-navigation a:hover,
 .footer-user-block-navigation a:focus {
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer-user-block-navigation a:active {
@@ -523,7 +616,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
@@ -542,7 +635,7 @@ html {
   font-size: 15px;
   line-height: 36px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -576,14 +669,20 @@ html {
 /* Форма обратной связи поп-ап*/
 .form-support {
   display: none;
+  width: 960px;
+  padding-top: 96px;
+  padding-right: 100px;
+  padding-bottom: 159px;
+  padding-left: 100px;
 }
+
 
 .form-write label {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 2.15px;
 }
 
@@ -592,7 +691,7 @@ html {
   font-size: 14px;
   line-height: 18px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 0.15px;
 
   background-color: #f2f2f2;
@@ -603,7 +702,7 @@ html {
   border: 3px solid transparent;
 }
 .form-write input:focus {
-  background-color: #fff;
+  background-color: #ffffff;
   border: 3px solid #f7e296;
   outline: none;
 }
@@ -612,7 +711,7 @@ html {
   font-size: 14px;
   line-height: 18px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 0.15px;
 
   background-color: #f2f2f2;
@@ -627,7 +726,7 @@ html {
 }
 
 .form-write textarea:focus {
-  background-color: #fff;
+  background-color: #ffffff;
   border: 3px solid #f7e296;
   outline: none;
 }
@@ -637,27 +736,48 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 
-  background-color: #fff;
+  background-color: #ffffff;
   border: none;
 }
 
 /* Карта поп-ап */
 .modal-map {
   display: none;
+  width: 960px;
 }
 
+/* ========================================================= */
 /* Стили каталога  товаров*/
 
+/* .inner-catalog-wraper {
+  width: 1100px;
+  margin-right: 60px;
+} */
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
+  padding-left: 60px;
 
   list-style: none;
 }
+.section-catalog h1 {
+  padding-left: 60px;
 
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 42px;
+  font-family: "Gilroy","Arial", sans-serif;
+  color: #000000;
+  letter-spacing: 0.17px;
+}
+.breadcrumbs-item {
+  padding-right: 39px;
+}
 .broadcrumps-link {
   line-height: 36px;
   color: rgba(0, 0, 0, 0.3);
@@ -683,18 +803,34 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.91px;
 }
 
+.sorting-any {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sorting-filter-title {
+  width: 330px;
+  padding-left: 60px;
+}
+.sorting-title {
+  width: 270px;
+  padding-left: 70px;
+}
 .soting-list {
+  display: flex;
   padding: 0;
 
   list-style: none;
 }
 
 .sorting-link {
+  padding-right: 30px;
+
   font-weight: 400;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
@@ -706,17 +842,32 @@ html {
 }
 
 .sorting-link:active {
-  color: #000;
+  color: #000000;
+}
+
+.result-search-section .container {
+  display: flex;
 }
 
 /* Боковой фильтр */
+.filter-search {
+  width: 330px;
+  padding-right: 70px;
+  padding-left: 60px;
+}
 .filter-list {
   padding: 0;
 
   list-style: none;
 }
+.filter-search form {
+  width: 200px;
+}
 
 .filter-search fieldset {
+  margin: 0;
+  padding: 0;
+
   border: none;
 }
 
@@ -728,18 +879,17 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 3.6px;
 
-  border-top: 2px solid #000;
+  border-top: 2px solid #000000;
 }
 
 .filter-search label {
   font-weight: 300;
   font-size: 14px;
   line-height: 40px;
-
-  color: #000;
+  color: #000000;
 }
 
 /* заблокированный переключатель */
@@ -751,23 +901,45 @@ html {
   font-weight: 800;
   font-size: 18px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 
-  background-color: #fff;
+  background-color: #ffffff;
   border: none;
 }
 
 .filter-search button:active {
   color: rgba(0, 0, 0, 0.3);
 }
+/* .result-search {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+
 
 .product-cards-list {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-top: 70px;
+  padding-bottom: 41px;
+  padding-left: 70px;
 
   list-style: none;
+}
+
+
+.product-cards {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 360px;
 }
 
 .product-cards .product-link {
@@ -777,8 +949,8 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
-  letter-spacing: 0.24px;
+  color: #000000;
+  letter-spacing: 0.18px;
 }
 
 .product-cards .product-price {
@@ -795,7 +967,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000;
+  color: #000000;
   letter-spacing: 3.6px;
 }
 
@@ -811,20 +983,40 @@ html {
 
 .product-option .add-to-compare:hover,
 .product-option .add-to-compare:focus {
-  color: #000;
+  color: #000000;
 }
 
 .product-option .add-to-compare:active {
   color: rgba(0, 0, 0, 0.2);
 }
 
+.product-option {
+  display: none;
+}
+
 /* Пагинация */
 
 .pagination {
+  display: flex;
+  justify-content: center;
   margin: 0;
-  padding: 0;
+  margin-bottom: 77px;
+  margin-left: 70px;
+  padding-top: 21px;
+  padding-right: 30px;
+  padding-bottom: 19px;
+  padding-left: 30px;
 
   list-style: none;
+
+  background-color: #ebebeb;
+}
+.pagination li:last-of-type {
+  margin-left: auto;
+}
+
+.pagination li:first-of-type {
+  margin-right: auto;
 }
 
 .pagination a {
@@ -842,19 +1034,19 @@ html {
 }
 
 .pagination a:active {
-  color: #000;
+  color: #000000;
 }
 
 .pagination .current-nuber,
 .pagination .current-nuber:hover,
 .pagination .current-nuber:active {
-  color: #000;
+  color: #000000;
 }
 
 .pagination .pagination-farther,
 .pagination .pagination-farther:hover,
 .pagination .pagination-farther:focus {
-  color: #000;
+  color: #000000;
   /* в будущем добавим цвет фона состояния */
 }
 
