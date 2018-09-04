@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <header class="catalog-header container">
     <a class="logo-top" href="index.html" aria-label="Ссылка на главную страницу Магазина">
       Device
@@ -17,13 +16,9 @@
     <div class="wraper-header">
       <div class="search-form-and-user-navavigation">
         <form action="https://echo.htmlacademy.ru" method="get" aria-label="Форма поиска по сайту">
-          <label for="search" class="visually-hidden">
-            Поиск по сайту
-          </label>
-          <input class="search-intput" type="search" id="search" name="search" placeholder="Поиск по сайту">
-          <button class="search-btn" type="submit">
-            Найти
-          </button>
+          <label for="search" class="visually-hidden">Поиск по сайту</label>
+          <input type="search" id="search" name="search" placeholder="Поиск по сайту">
+          <button class="search-btn" type="submit">Найти</button>
         </form>
 
         <ul class="user-block-navigation" aria-label="Блок навигации пользователя">
@@ -39,44 +34,47 @@
           <li>
             <a class="cort" href="cort.html">Корзина</a></li>
         </ul>
+      </div>
 
-        <ul class="catalog">
-          <li><a class="catalog-title" href="catalog.html">Каталог Товаров</a>
-            <!-- навигация при наведении -->
-            <div class="menu-drop-down">
-              <ul class="catalog-menu">
-                <li>
-                  <a class="catalog-link" href="reality.html">Виртуальная реальность</a>
-                </li>
-                <li>
-                  <a class="catalog-link" href="catalog.html">Моноподы для селфи</a>
-                </li>
-                <li>
-                  <a class="catalog-link" href="action-cam.html">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="catalog-menu">
-                <li>
-                  <a class="catalog-link" href="fitness-trackers.html">Фитнесc-браслеты</a>
-                </li>
-                <li>
-                  <a class="catalog-link" href="clock.html">Умные часы</a>
-                </li>
-              </ul>
-              <ul class="catalog-menu">
-                <li>
-                  <a class="catalog-link" href="quadrocopters.html">Квадракоптеры</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-
-        <ul class="nav-service" aria-label="Навигация по разделу дополнительной информации для пользователя">
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts">Контакты</a></li>
-        </ul>
+        <nav class="cite-navigation" aria-label="Главная навигация по разделам каталога">
+          <ul class="catalog">
+            <li><a class="catalog-title" href="catalog.html">Каталог Товаров</a>
+                <!-- навигация при наведении -->
+              <div class="menu-drop-down">
+                <ul class="catalog-menu">
+                  <li>
+                    <a class="catalog-link" href="reality.html">Виртуальная реальность</a>
+                  </li>
+                  <li>
+                    <a class="catalog-link" href="catalog.html">Моноподы для селфи</a>
+                  </li>
+                  <li>
+                    <a class="catalog-link" href="action-cam.html">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="catalog-menu">
+                  <li>
+                    <a class="catalog-link" href="fitness-trackers.html">Фитнесc-браслеты</a>
+                  </li>
+                  <li>
+                    <a class="catalog-link" href="clock.html">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="catalog-menu">
+                  <li>
+                    <a class="catalog-link" href="quadrocopters.html">Квадракоптеры</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav-service">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="warranty.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
 
       </div>
     </div>
@@ -85,8 +83,9 @@
   <main>
     <!-- Секция каталога товаров -->
     <section class="section-catalog container">
-      <h1 class="title-catalog">Монопады для селфи</h1>
+      <h1 class="title-catalog">Моноподы для селфи</h1>
 
+      <!--Хлебные крошки -->
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="broadcrumps-link" href="">Главная</a>
@@ -107,28 +106,31 @@
         <div class="sorting-any" aria-label="Сортировка товара по различным критерия">
           <p class="sorting-filter-title">Фильтр</p>
 
-          <p class="sorting-title">Сортировка:</p>
-          <ul class="soting-list">
-            <li class="sorting-item">
-              <a class="sorting-link" href="#">По цене</a>
-            </li>
+          <div class="sorting-wraper">
+            <p class="sorting-title">Сортировка:</p>
+            <ul class="soting-list">
+              <li class="sorting-item">
+                <a class="sorting-link" href="#">По цене</a>
+              </li>
 
-            <li class="sorting-item">
-              <a class="sorting-link" href="#">По типу</a>
-            </li>
+              <li class="sorting-item">
+                <a class="sorting-link" href="#">По типу</a>
+              </li>
 
-            <li class="sorting-item">
-              <a class="sorting-link" href="#">По популярности</a>
-            </li>
+              <li class="sorting-item">
+                <a class="sorting-link" href="#">По популярности</a>
+              </li>
 
-            <li>
-              <a class="sorting-button-link" href="#"><span class="visually-hidden">По порядку</span></a>
-            </li>
+              <li>
+                <a class="sorting-button-link" href="#"><span class="visually-hidden">По порядку</span></a>
+              </li>
 
-            <li>
-              <a class="sorting-button-link" href="#"><span class="visually-hidden">В обратном порядке</span></a>
-            </li>
-          </ul>
+              <li>
+                <a class="sorting-button-link" href="#"><span class="visually-hidden">В обратном порядке</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         </div>
       </div>
