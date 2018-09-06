@@ -251,24 +251,27 @@
       <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Преимущества покупки у нас</h2>
-
           <!-- Поля навигации в разделе преимущества -->
+          <input  class="delivery" type="radio" name="radio" id="delivery" checked>
+          <input  class="warranty" type="radio" name="radio" id="warranty">
+          <input  class="credit" type="radio" name="radio" id="credit">
+
           <ul class="features-navigation">
-            <li class="navigation-item">
+            <li class="navigation-item first-item">
               <label for="delivery">Доставка</label>
             </li>
 
-            <li class="navigation-item">
+            <li class="navigation-item second-item">
               <label for="warranty">Гарантия</label>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item third-item">
               <label for="credit">Кредит</label>
             </li>
           </ul>
 
           <!-- Контентное содержания раздела приимущества -->
           <ul class="content-feature-navigation">
-            <li class="features-contnet">
+            <li class="features-contnet" id="slide-1">
               <p class="features-title">
                 Доставка
               </p>
