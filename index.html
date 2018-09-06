@@ -82,104 +82,110 @@
       <!-- Верхний слайдер из 3х элементов -->
       <section class="slider-top container">
         <h2 class="visually-hidden">Слайдер</h2>
+        <input class="slide-top-1" type="radio" name="radio" id="slide-top-1" checked>
+        <input class="slide-top-2" type="radio" name="radio" id="slide-top-2">
+        <input class="slide-top-3" type="radio" name="radio" id="slide-top-3">
 
-          <ul class="slider-list">
-            <!-- на стадии оживления нужно будет добавить радио баттоны и label -->
+        <ul class="slider-button-list">
+          <li><label for="slide-top-1"></label></li>
+          <li><label for="slide-top-2"></label></li>
+          <li><label for="slide-top-3"></label></li>
+        </ul>
+        <ul class="slider-top-list">
+          <!-- на стадии оживления нужно будет добавить радио баттоны и label -->
+      <!-- слайд 1 -->
+          <li class="slider-item slide-number-1">
+            <div class="slider-image">
+              <img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
+            </div>
+            <!-- Описание слайда №1 -->
+            <div class="item-description">
+              <span class="slide-number">01</span>
+              <p class="slide-title">
+                Делай селфи,<br>
+                как Бен Стиллер!
+              </p>
+              <p class="slide-text">
+                Самая длинная палка для селфи доступна в нашем магазине.
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
+              <a class="btn" href="#">Подробнее</a>
+              <table class="table-character">
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr>
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
+                </tr>
+              </table>
+            </div>
+          </li>
 
-            <!-- слайд 1 -->
-            <li class="slider-item">
-              <div class="slider-image">
-                <img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
-              </div>
+          <!--Слайд №2-->
+          <li class="slider-item slide-number-2">
+            <div class="slider-image">
+              <img src="img/slider-2.png" alt="Фитнесс браслет" width="345" height="485">
+            </div>
 
-              <!-- Описание слайда №1 -->
-              <div class="item-description">
-                <span class="slide-number">01</span>
-                <p class="slide-title">
-                  Делай селфи,<br>
-                  как Бен Стиллер!
-                </p>
-                <p class="slide-text">
-                  Самая длинная палка для селфи доступна в нашем магазине.
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </p>
-                <a class="btn" href="#">Подробнее</a>
-                <table class="table-character">
-                  <tr>
-                    <td>8,5 м</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                  </tr>
-                  <tr>
-                    <th>Длина палки</th>
-                    <th>Вес палки</th>
-                    <th>Материал</th>
-                  </tr>
-                </table>
-              </div>
-            </li>
+            <!-- Описание слайда №2 -->
+            <div class="item-description">
+              <span class="slide-number">02</span>
+              <p class="slide-title">
+                Худеем<br>
+                правильно!
+              </p>
+              <p class="slide-text">
+                Мотивирующие фитнесc-браслеты помогут найти в себе силы
+                не пропускать занятия и соблюдать диету.
+              </p>
+              <a class="btn" href="#">Подробнее</a>
+              <table class="table-character">
+                <tr>
+                  <td>48 часов</td>
+                </tr>
+                <tr>
+                  <th>Без подзарядки</th>
+                </tr>
+              </table>
+            </div>
+          </li>
 
-            <!--Слайд №2-->
-            <li class="slider-item">
-              <div class="slider-image">
-                <img src="img/slider-2.png" alt="Фитнесс браслет" width="345" height="485">
-              </div>
+          <!-- Слайдер 3-->
+          <li class="slider-item slide-number-3">
+            <div class="slider-image">
+              <img src="img/slider-3.png" alt="Квадракоптер" width="526" height="334">
+            </div>
 
-              <!-- Описание слайда №2 -->
-              <div class="item-description">
-                <span class="slide-number">02</span>
-                <p class="slide-title">
-                  Худеем<br>
-                  правильно!
-                </p>
-                <p class="slide-text">
-                  Мотивирующие фитнесc-браслеты помогут найти в себе силы
-                  не пропускать занятия и соблюдать диету.
-                </p>
-                <a class="btn" href="#">Подробнее</a>
-                <table class="table-character">
-                  <tr>
-                    <td>48 часов</td>
-                  </tr>
-                  <tr>
-                    <th>Без подзарядки</th>
-                  </tr>
-                </table>
-              </div>
-            </li>
+            <!-- Описание слайда №3 -->
+            <div class="item-description">
+              <span class="slide-number">03</span>
+              <p class="slide-title">
+                  Порхает как бабочка,
+                  жалит как пчела!
+              </p>
+              <p class="slide-text">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен
+                мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <a class="btn" href="#">Подробнее</a>
+              <table class="table-character">
+                <tr>
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr>
+                  <th>Дальность полёта</th>
+                  <th>Радиус поражения</th>
+                </tr>
+              </table>
+            </div>
+          </li>
 
-
-            <li class="slider-item">
-              <div class="slider-image">
-                <img src="img/slider-3.png" alt="Квадракоптер" width="526" height="334">
-              </div>
-
-              <!-- Описание слайда №3 -->
-              <div class="item-description">
-                <span class="slide-number">03</span>
-                <p class="slide-title">
-                    Порхает как бабочка,
-                    жалит как пчела!
-                </p>
-                <p class="slide-text">
-                  Этот обычный, на первый взгляд, квадрокоптер оснащен
-                  мощным лазером, замаскированным под стандартную камеру.
-                </p>
-                <a class="btn" href="#">Подробнее</a>
-                <table class="table-character">
-                  <tr>
-                    <td>800 м</td>
-                    <td>50 м</td>
-                  </tr>
-                  <tr>
-                    <th>Дальность полёта</th>
-                    <th>Радиус поражения</th>
-                  </tr>
-                </table>
-              </div>
-            </li>
-
-          </ul>
+        </ul>
       </section>
 
 
@@ -252,8 +258,8 @@
         <div class="container">
           <h2 class="visually-hidden">Преимущества покупки у нас</h2>
           <!-- Поля навигации в разделе преимущества -->
-          <input  class="delivery" type="radio" name="radio" id="delivery" checked>
-          <input  class="warranty" type="radio" name="radio" id="warranty">
+          <input  class="delivery" type="radio" name="radio" id="delivery">
+          <input  class="warranty" type="radio" name="radio" id="warranty" checked>
           <input  class="credit" type="radio" name="radio" id="credit">
 
           <ul class="features-navigation">
@@ -271,7 +277,7 @@
 
           <!-- Контентное содержания раздела приимущества -->
           <ul class="content-feature-navigation">
-            <li class="features-contnet" id="slide-1">
+            <li class="features-contnet slide-1">
               <p class="features-title">
                 Доставка
               </p>
@@ -284,7 +290,7 @@
               <img src="img/delivery.svg" alt="Лого Доставка" width="136" height="164">
             </li>
 
-            <li class="features-contnet">
+            <li class="features-contnet slide-2">
               <p class="features-title">
                 Гарантия
               </p>
@@ -296,7 +302,7 @@
               <img src="img/warranty.svg" alt="Лого Гарантия" width="171" height="194">
             </li>
 
-            <li class="features-contnet">
+            <li class="features-contnet slide-3">
               <p class="features-title">
                 Кредит
               </p>
