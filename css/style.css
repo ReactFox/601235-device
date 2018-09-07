@@ -779,6 +779,38 @@ html {
 
   list-style: none;
 }
+
+/* Наведение карточку логотипы  */
+
+.brands-list a {
+  position: relative;
+}
+
+.brands-list img:first-child {
+  opacity: 1;
+}
+
+.brands-list img:first-child:hover {
+  opacity: 0;
+}
+
+.brands-list img:last-child {
+  position: absolute;
+  left: 0;
+
+  opacity: 0;
+}
+
+.brands-list img:first-child:hover + img {
+  right: 0;
+
+  opacity: 1;
+}
+
+.brands-list img:last-child:hover {
+  opacity: 1;
+}
+
 /* Блок о нас и контакты */
 
 .about-and-contacts {
