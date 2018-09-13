@@ -1335,8 +1335,8 @@ html {
 /* Форма обратной связи поп-ап*/
 .form-support form{
   display: flex;
-  /* flex: wrap; */
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   /* align-self: center; */
   width: 960px;
   padding-top: 96px;
@@ -1346,7 +1346,10 @@ html {
 }
 
 .input-wrapper {
-  width: 50%;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
 }
 
 .form-write label {
@@ -1359,7 +1362,7 @@ html {
 }
 
 .form-write input {
-  /* width: 34%; */
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1369,6 +1372,19 @@ html {
 
   background-color: #f2f2f2;
   border: 3px solid transparent;
+}
+
+.you-name-block {
+  padding-right: 20px;
+}
+
+.you-email-block{
+  padding-left: 20px;
+}
+
+.form-write label[for="messege"] {
+  margin-top: 30px;
+
 }
 
 .form-write input:hover {
@@ -1383,7 +1399,7 @@ html {
 }
 
 .form-write textarea {
-  width: 100%;
+  width: 760px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1459,8 +1475,6 @@ html {
 
   list-style: none;
 }
-
-
 
 .breadcrumbs-item {
   padding-right: 35px;
@@ -1625,10 +1639,6 @@ html {
 .sorting-down:active::before {
   opacity: 1;
 }
-
-
-
-
 
 /* Основной боковой фильтр */
 .result-search-section {
