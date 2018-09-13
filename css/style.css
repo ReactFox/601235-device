@@ -1247,6 +1247,7 @@ html {
 .index-footer .social-btn,
 .catalog-footer .social-btn {
   font-size: 0;
+  opacity: 0.2;
 }
 
 .index-footer .social-btn:hover,
@@ -1332,13 +1333,20 @@ html {
 }
 
 /* Форма обратной связи поп-ап*/
-.form-support {
-  display: none;
+.form-support form{
+  display: flex;
+  /* flex: wrap; */
+  flex-direction: column;
+  /* align-self: center; */
   width: 960px;
   padding-top: 96px;
   padding-right: 100px;
   padding-bottom: 159px;
   padding-left: 100px;
+}
+
+.input-wrapper {
+  width: 50%;
 }
 
 .form-write label {
@@ -1351,6 +1359,7 @@ html {
 }
 
 .form-write input {
+  /* width: 34%; */
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1374,6 +1383,7 @@ html {
 }
 
 .form-write textarea {
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1483,7 +1493,7 @@ html {
   content: url("../img/nav-arrow.svg");
   width: 4px;
   height: 7px;
-  top: 2.4px;
+  top: 1.4px;
   right: 17px;
 }
 
@@ -1509,8 +1519,10 @@ html {
 .sorting-wraper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0 ;
   padding: 0;
+  width: 830px;
 
   background-color: #ebebeb;
 }
@@ -1532,11 +1544,8 @@ html {
 .sorting-title {
   width: 270px;
   margin: 0;
-  /* margin-top: 22px; */
   padding: 0;
   padding-left: 70px;
-  /* padding-top: 24px; */
-  /* padding-bottom: 26px; */
 }
 
 .soting-list {
@@ -1544,9 +1553,6 @@ html {
   width: 470px;
   margin: 0;
   padding: 0;
-  /* padding-top: 24px; */
-  /* padding-bottom: 26px; */
-
   list-style: none;
 }
 
@@ -1567,6 +1573,64 @@ html {
   color: #000;
 }
 
+.sorting-up-down {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  list-style: none;
+  display: flex;
+  min-width: 40px;
+  min-height: 10px;
+  justify-content: space-between;
+}
+
+.sorting-up,
+.sorting-down {
+  position: relative;
+  /* display: flex; */
+  /* opacity: 0.2; */
+}
+
+.sorting-up::before,
+.sorting-down::before {
+ position: absolute;
+ content: '';
+ width: 11px;
+ height: 10px;
+ background-repeat: no-repeat;
+ background-position: 0 0;
+ opacity: 0.2;
+}
+
+.sorting-up::before {
+  background-image: url("../img/icon-up-dir.svg");
+  top: 15px;
+  left: 0;
+}
+
+.sorting-down::before {
+  background-image: url("../img/icon-down-dir.svg");
+  top: 15px;
+  right: 0;
+}
+
+.sorting-up:hover::before,
+.sorting-down:hover::before,
+.sorting-up:focus::before,
+.sorting-down:focus::before {
+  opacity: 0.4;
+}
+
+.sorting-up:active::before,
+.sorting-down:active::before {
+  opacity: 1;
+}
+
+
+
+
+
+/* Основной боковой фильтр */
 .result-search-section {
   background: linear-gradient(to right,#efefef 0%,#efefef 50%,#ffffff 50%,#ffffff 100%);
 }
