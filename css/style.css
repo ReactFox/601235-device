@@ -35,6 +35,8 @@
 }
 
 body {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
@@ -660,9 +662,6 @@ html {
 .btn-decoration {
   position: relative;
   z-index: 1;
-  /* display: inline-flex;
-  justify-content: center;
-  align-items: center; */
 
   font-weight: 800;
   font-size: 18px;
@@ -1247,6 +1246,7 @@ html {
 .index-footer .social-btn,
 .catalog-footer .social-btn {
   font-size: 0;
+
   opacity: 0.2;
 }
 
@@ -1333,7 +1333,22 @@ html {
 }
 
 /* Форма обратной связи поп-ап*/
-.form-support form{
+
+.form-support {
+  position: fixed;
+  top: 15%;
+  left: 20%;
+  z-index: 10;
+
+  width: 960px;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+}
+
+.form-support form {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   /* flex-direction: column; */
@@ -1341,15 +1356,16 @@ html {
   width: 960px;
   padding-top: 96px;
   padding-right: 100px;
-  padding-bottom: 159px;
+  padding-bottom: 70px;
   padding-left: 100px;
+  /* margin-bottom: 30px; */
 }
 
 .input-wrapper {
-  width: 380px;
   display: flex;
-  flex-direction: column;
   flex-shrink: 0;
+  flex-direction: column;
+  width: 380px;
 }
 
 .form-write label {
@@ -1363,6 +1379,7 @@ html {
 
 .form-write input {
   width: 100%;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1378,13 +1395,12 @@ html {
   padding-right: 20px;
 }
 
-.you-email-block{
+.you-email-block {
   padding-left: 20px;
 }
 
 .form-write label[for="messege"] {
   margin-top: 30px;
-
 }
 
 .form-write input:hover {
@@ -1400,6 +1416,8 @@ html {
 
 .form-write textarea {
   width: 760px;
+  min-height: 156px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1424,7 +1442,8 @@ html {
   outline: none;
 }
 
-.form-write button[type="submit"] {
+/* .form-write button[type="submit"] {
+  position: relative;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -1435,12 +1454,70 @@ html {
 
   background-color: #ffffff;
   border: none;
+} */
+
+.form-support button {
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-right: 36px;
+  padding-bottom: 10px;
+  padding-left: 34px;
+
+  background-color: transparent;
+  border: none;
 }
+
+.form-support button {
+  cursor: pointer;
+}
+
+.form-support .close-form-support {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+  margin: 0;
+  margin-top: 22px;
+  padding: 0;
+
+  border-radius: 50%;
+}
+
+.close-form-support::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 55px;
+  height: 55px;
+
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.close-form-support:hover::after,
+.close-form-support:focus::after {
+  opacity: 1;
+}
+
+.close-form-support:active::after {
+  opacity: 0.2;
+}
+
+
+/* Доделать не валидное значение!! */
+
+
 
 /* Карта поп-ап */
 .modal-map {
   display: none;
   width: 960px;
+  /* добавить тень */
 }
 
 /* ========================================================= */
@@ -1477,8 +1554,9 @@ html {
 }
 
 .breadcrumbs-item {
-  padding-right: 35px;
   position: relative;
+
+  padding-right: 35px;
 }
 
 .broadcrumps-link {
@@ -1503,16 +1581,17 @@ html {
 }
 
 .breadcrumbs-item::after {
-  position: absolute;
   content: url("../img/nav-arrow.svg");
-  width: 4px;
-  height: 7px;
+  position: absolute;
   top: 1.4px;
   right: 17px;
+
+  width: 4px;
+  height: 7px;
 }
 
 .breadcrumbs-item:last-child::after {
-  content: '';
+  content: "";
 }
 
 /* Шапка сортировки товаров */
@@ -1532,11 +1611,11 @@ html {
 
 .sorting-wraper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width: 830px;
   margin: 0 ;
   padding: 0;
-  width: 830px;
 
   background-color: #ebebeb;
 }
@@ -1567,6 +1646,7 @@ html {
   width: 470px;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -1584,18 +1664,19 @@ html {
 }
 
 .sorting-link:active {
-  color: #000;
+  color: #000000;
 }
 
 .sorting-up-down {
-  margin: 0;
-  padding: 0;
-  margin-left: 20px;
-  list-style: none;
   display: flex;
+  justify-content: space-between;
   min-width: 40px;
   min-height: 10px;
-  justify-content: space-between;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .sorting-up,
@@ -1607,25 +1688,29 @@ html {
 
 .sorting-up::before,
 .sorting-down::before {
- position: absolute;
- content: '';
- width: 11px;
- height: 10px;
- background-repeat: no-repeat;
- background-position: 0 0;
- opacity: 0.2;
+  content: "";
+  position: absolute;
+
+  width: 11px;
+  height: 10px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.2;
 }
 
 .sorting-up::before {
-  background-image: url("../img/icon-up-dir.svg");
   top: 15px;
   left: 0;
+
+  background-image: url("../img/icon-up-dir.svg");
 }
 
 .sorting-down::before {
-  background-image: url("../img/icon-down-dir.svg");
   top: 15px;
   right: 0;
+
+  background-image: url("../img/icon-down-dir.svg");
 }
 
 .sorting-up:hover::before,
@@ -1724,7 +1809,7 @@ html {
 
 .range input[type="text"] {
   background-color: #efefef;
-  border:none;
+  border: none;
 }
 
 .range-filter {
@@ -1735,9 +1820,10 @@ html {
 
 .range-controls {
   position: relative;
+
+  height: 80px;
   margin-bottom: 15px;
   padding-top: 40px;
-  height: 80px;
   padding-left: 4px;
 }
 
@@ -1750,12 +1836,13 @@ html {
 
 .range-controls .toggle {
   position: absolute;
+  top: 52px;
+
+  width: 20px;
+  height: 23px;
 
   background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
-  width: 20px;
-  height: 23px;
-  top: 52px;
 }
 
 .range-controls .toggle-min {
@@ -1768,20 +1855,21 @@ html {
 
 .range-controls .toggle:active {
   position: absolute;
+  top: 51px;
+
+  width: 22px;
+  height: 25px;
 
   background-image: url("../img/Filter-hover.svg");
   background-repeat: no-repeat;
-  width: 22px;
-  height: 25px;
-  top: 51px;
 }
 
 .range-controls .scale {
   height: 2px;
-  background-color: #dbdbdb;
+  margin-top: 21px;
 
+  background-color: #dbdbdb;
   background-clip: border-box;
- margin-top: 21px;
 }
 
 .filter-search button {
