@@ -137,13 +137,30 @@
         <div class="filter-search">
           <h2 class="visually-hidden">Фильтр раздела каталга</h2>
           <form action="https://echo.htmlacademy.ru" method="POST" aria-label="Фильтр раздела каталга, выбор товара по различным категориям">
+            <!-- Блок с ползунками -->
             <fieldset class="range">
               <legend>Стоимость</legend>
-              <span>От 0</span>
-              <span>До 5000</span>
-              <!-- окончательнос размечу в момент стиллизации  -->
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                    <label class="min-price">
+                      от
+                      <input name="min-price" type="text" value="0">
+                    </label>
+                    <label class="max-price">
+                      до
+                      <input name="max-price" type="text" value="5000">
+                    </label>
+                </div>
+              </div>
             </fieldset>
-
+            <!-- Блок с выбором цвета -->
             <fieldset>
               <legend>Цвет</legend>
               <ul class="filter-list">

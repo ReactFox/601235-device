@@ -1658,6 +1658,14 @@ html {
   background-color: #efefef;
 }
 
+/* Заблокированные переключатели */
+
+.filter-search input:disabled,
+.filter-search input:disabled + label {
+  color: #a6a6a6;
+}
+
+
 .filter-list {
   padding: 0;
 
@@ -1697,10 +1705,83 @@ html {
   color: #000000;
 }
 
+.price-controls {
+  display: flex;
+}
 
-/* заблокированный переключатель */
-.label-block {
-  color: #a6a6a6;
+.price-controls label {
+  display: flex;
+  flex-shrink: 0;
+  width: 50%;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+
+  opacity: 0.2;
+}
+
+.range input[type="text"] {
+  background-color: #efefef;
+  border:none;
+}
+
+.range-filter {
+  width: 200px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 15px;
+  padding-top: 40px;
+  height: 80px;
+  padding-left: 4px;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background-color: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 23px;
+  top: 52px;
+}
+
+.range-controls .toggle-min {
+  left: 0;
+}
+
+.range-controls .toggle-max {
+  left: 130px;
+}
+
+.range-controls .toggle:active {
+  position: absolute;
+
+  background-image: url("../img/Filter-hover.svg");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 25px;
+  top: 51px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: #dbdbdb;
+
+  background-clip: border-box;
+ margin-top: 21px;
 }
 
 .filter-search button {
