@@ -283,6 +283,7 @@ html {
 
 .search-form-and-user-navavigation button:active {
   display: inline-block;
+  vertical-align: top;
 
   color: rgba(255, 255, 255, 0.3);
 
@@ -343,12 +344,7 @@ html {
 
 /* икони */
 
-
-/* Снова проблемы с IE11 */
-/* иконка продает если убрать фокус с поиска */
-
-
-.search-form-and-user-navavigation form::before,
+.search-form-and-user-navavigation form::after,
 .catalog-title::after,
 .user-block-navigation a::before {
   content: "";
@@ -358,7 +354,7 @@ html {
   background-position: top center;
 }
 
-.search-form-and-user-navavigation form::before {
+.search-form-and-user-navavigation form::after {
   top: 10px;
   left: 4px;
 
@@ -1223,6 +1219,7 @@ html {
 }
 
 .row-bottom::before {
+  position: absolute;
   content: "";
 
   width: 80px;
@@ -1517,7 +1514,7 @@ html {
 .modal-map {
   display: none;
   width: 960px;
-  /* добавить тень */
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
 /* ========================================================= */
