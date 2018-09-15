@@ -283,8 +283,8 @@ html {
 
 .search-form-and-user-navavigation button:active {
   display: inline-block;
-  vertical-align: top;
 
+  vertical-align: top;
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #000000;
@@ -556,6 +556,10 @@ html {
   background-clip: content-box;
 }
 
+/* .slider-top .container {
+  min-height: 525px;
+} */
+
 .slider-button-list {
   margin: 0;
   padding: 0;
@@ -666,7 +670,11 @@ html {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.7px;
+
+  background-color: transparent;
+  border: none;
 }
+
 
 .btn-decoration::after {
   content: "";
@@ -1215,12 +1223,16 @@ html {
 }
 
 .row-bottom {
+  position: relative;
+
   padding-bottom: 15px;
 }
 
 .row-bottom::before {
-  position: absolute;
   content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
 
   width: 80px;
   height: 7px;
@@ -1233,6 +1245,8 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   min-width: 130px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .social-btn {
   display: flex;
@@ -1331,16 +1345,27 @@ html {
 
 /* Форма обратной связи поп-ап*/
 
-.form-support {
+.modal-window {
   position: fixed;
-  top: 15%;
-  left: 20%;
+  top: 135px;
+  left: 50%;
   z-index: 10;
 
+  display: none;
+
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  transform: translateX(-50%);
+}
+
+/* Класс для открытия окна */
+.open-modal-window {
+  display: block;
+}
+
+.form-support {
   width: 960px;
 
   background-color: #ffffff;
-  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
 .form-support form {
@@ -1348,14 +1373,11 @@ html {
 
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
-  /* align-self: center; */
   width: 960px;
-  padding-top: 96px;
+  padding-top: 93px;
   padding-right: 100px;
   padding-bottom: 70px;
   padding-left: 100px;
-  /* margin-bottom: 30px; */
 }
 
 .input-wrapper {
@@ -1366,6 +1388,8 @@ html {
 }
 
 .form-write label {
+  margin-bottom: 10px;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -1375,6 +1399,11 @@ html {
 }
 
 .form-write input {
+  width: 100%;
+}
+
+.form-write input,
+.form-write textarea {
   width: 100%;
 
   font-weight: 400;
@@ -1386,6 +1415,20 @@ html {
 
   background-color: #f2f2f2;
   border: 3px solid transparent;
+}
+
+.form-write input {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.form-write textarea {
+  width: 760px;
+  min-height: 156px;
+
+  resize: none;
 }
 
 .you-name-block {
@@ -1400,60 +1443,95 @@ html {
   margin-top: 30px;
 }
 
-.form-write input:hover {
+/* Стилизация полей форм обратной связи */
+
+.form-write input:required,
+.form-write textarea:required {
+  border: 3px solid transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.form-write input:required:hover,
+.form-write textarea:required:hover {
   background-color: #ebebeb;
   border: 3px solid transparent;
 }
 
-.form-write input:focus {
+.form-write input:required:focus,
+.form-write textarea:required:focus,
+.form-write input:required:valid:focus,
+.form-write textarea:required:valid:focus {
   background-color: #ffffff;
   border: 3px solid #f7e296;
   outline: none;
+  box-shadow: none;
 }
 
-.form-write textarea {
-  width: 760px;
-  min-height: 156px;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Open Sans","Arial", sans-serif;
-  color: #000000;
-  letter-spacing: 0.15px;
+.form-write input:required:invalid:focus,
+.form-write textarea:required:focus:invalid {
+  background-color: #f6dada;
+  border: 3px solid #f6dada;
+}
 
+.form-support .btn-decoration {
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-right: 36px;
+  padding-bottom: 10px;
+  padding-left: 34px;
+}
+
+/*
+.form-write input[type="text"]:required:invalid,
+.form-write input[type="email"]:focus:invalid,
+.form-write textarea:focus:invalid {
+  background-color: #f6dada;
+  border: 3px solid #f6dada;
+}
+
+.form-write input[type="text"]:required:invalid:not(:focus),
+.form-write input[type="email"]:required:invalid:not(:focus),
+.form-write input[type="text"]:required:invalid:not(:focus) {
   background-color: #f2f2f2;
   border: 3px solid transparent;
-
-  resize: none;
-}
-
-.form-write textarea:hover {
-  background-color: #ebebeb;
-  border: 3px solid transparent;
-}
-
-.form-write textarea:focus {
-  background-color: #ffffff;
-  border: 3px solid #f7e296;
   outline: none;
-}
-
-/* .form-write button[type="submit"] {
-  position: relative;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy","Arial", sans-serif;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
-
-  background-color: #ffffff;
-  border: none;
+  box-shadow: none;
 } */
 
-.form-support button {
+
+
+
+/* .form-write input[type="text"]:required,
+.form-write input[type="email"]:required,
+.form-write textarea:required {
+  box-shadow: none;
+
+} */
+
+/* .form-write input[type="text"]:required:not(:focus),
+.form-write input[type="email"]:required:not(:focus)
+.form-write textarea:required:not(:focus) {
+  background-color: #f2f2f2;
+  border: 3px solid transparent;
+} */
+
+/* .form-write input[type="text"]:not(:focus):hover,
+.form-write input[type="email"]:not(:focus):hover
+.form-write textarea:required:not(:focus):hover {
+  background-color: #ebebeb;
+  border: 3px solid transparent;
+} */
+
+/* .form-write input[type="email"]:required,
+.form-write input[type="text"]:required,
+.form-write textarea:required:focus {
+  background-color: #ffffff;
+  border: 3px solid #f7e296;
+} */
+
+.close-pop-up {
   margin-top: 25px;
   padding-top: 10px;
   padding-right: 36px;
@@ -1462,16 +1540,14 @@ html {
 
   background-color: transparent;
   border: none;
-}
-
-.form-support button {
   cursor: pointer;
 }
 
-.form-support .close-form-support {
+.close-pop-up {
   position: absolute;
   top: 0;
   right: 22px;
+
   width: 55px;
   height: 55px;
   margin: 0;
@@ -1481,7 +1557,7 @@ html {
   border-radius: 50%;
 }
 
-.close-form-support::after {
+.close-pop-up::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1496,26 +1572,60 @@ html {
   opacity: 0.5;
 }
 
-.close-form-support:hover::after,
-.close-form-support:focus::after {
+.close-pop-up:hover::after,
+.close-pop-up:focus::after {
   opacity: 1;
 }
 
-.close-form-support:active::after {
+.close-pop-up:active::after {
   opacity: 0.2;
 }
 
-
-/* Доделать не валидное значение!! */
-
-
-
 /* Карта поп-ап */
 .modal-map {
-  display: none;
-  width: 960px;
-  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  display: none;;
+  width: 991px;
+  height: auto;
 }
+
+.modal-map img {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ========================================================= */
 /* Стили каталога  товаров*/

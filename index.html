@@ -481,36 +481,39 @@
     </footer>
 
     <!-- Форма для отправки ответа -->
-    <section class="form-support">
+    <section class="form-support modal-window open-modal-window">
       <h2 class="visually-hidden">Форма обращений</h2>
       <form class="form-write" action="write-us.html" method="post">
         <div class="input-wrapper you-name-block">
           <label for="you-name">Ваше имя:</label>
-          <input type="text" id="you-name" name="name" placeholder="Имя Фамилия">
+          <input type="text" id="you-name" name="name" placeholder="Имя Фамилия"
+          pattern="^[А-Яа-яЁё\s]+$" autocomplete="off"required>
         </div>
         <div class="input-wrapper you-email-block">
           <label for="mail">Ваш e-mail:</label>
-          <input type="email" name="mail" id="mail">
+          <input type="email" name="mail" id="mail"
+          pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+          autocomplete="off" required>
         </div>
 
         <label for="messege">Текст письма:</label>
-        <textarea name="messege" id="messege" cols="50" rows="10" placeholder="В свободой форме"></textarea>
-        <!-- размеры поля ввода скорее всего потом уберём, сейчас для доступности-->
+        <textarea name="messege" id="messege" placeholder="В свободой форме"
+        autocomplete="off" required></textarea>
 
         <button class="btn-decoration" type="submit">Отправить</button>
-        <button class="close-form-support" id="close-form-support"  type="button">
+        <button class="close-pop-up" id="close-form-support"  type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
       </form>
     </section>
 
     <!-- Секция всплывающего окна, потом скроем-->
-    <section class="modal-map">
+    <section class="modal-map modal-window">
       <h2 class="visually-hidden">Интерактивная карта</h2>
       <img class="img-map-bottom" src="img/map-big-min.jpg"
        alt="Наш адрес: Россия, Москва, улица Строителей, 15"
        width="991" height="591">
-      <button class="close-form-support" id="close-form-support" type="button">
+      <button class="close-pop-up" id="close-form-support" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
