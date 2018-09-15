@@ -1470,7 +1470,7 @@ html {
   box-shadow: none;
 }
 
-.form-write input:required:invalid,
+.form-write input:required:invalid:focus,
 .form-write textarea:required:invalid:focus {
   background-color: #f6dada;
   border: 3px solid #f6dada;
