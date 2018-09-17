@@ -1893,8 +1893,8 @@ html {
   background-color: #efefef;
 }
 
-/* Заблокированные переключатели */
-
+/* Визуальное предствовление заблокированных
+  checkbox и radiobetton  */
 .filter-search input:disabled,
 .filter-search input:disabled + label {
   color: #a6a6a6;
