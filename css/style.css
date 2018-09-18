@@ -2143,7 +2143,8 @@ width: 72px;
 height: 72px;
 padding-top: 21px;
 font-size: 14px;
-font-family: "Gilroy ExtraBold","Arial",sans-serif;
+font-family: "Gilroy", "Arial", sans-serif;
+font-weight: 800;
 text-align: center;
 color: rgba(0,0,0,.2);
 letter-spacing: 1px;
@@ -2270,6 +2271,7 @@ z-index: 0;
   font-family: "Gilroy","Arial", sans-serif;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 3.2px;
+  text-transform: uppercase;
 }
 
 .pagination .pagination-farther {
