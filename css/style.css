@@ -470,8 +470,8 @@ html {
 
   display: none;
   width: 1160px;
-  padding-top: 32px;
-  padding-bottom: 37px;
+  padding-top: 20px;
+  padding-bottom: 31px;
   padding-left: 60px;
 
   background-color: #f7e296;
@@ -492,7 +492,7 @@ html {
 }
 
 .menu-drop-down .catalog-menu:first-child {
-  margin-right: 58px;
+  margin-right: 60px;
 }
 
 .catalog-menu li {
@@ -531,14 +531,14 @@ html {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+  display: block;
 }
 
 .nav-service li {
   flex-shrink: 0;
+  display: block;
+  margin-top: 2px;
 }
-/* .nav-service li:first-child {
-  margin-right: 15px;
-} */
 
 .nav-service li:last-child {
   margin-left: 70px;
@@ -553,6 +553,9 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.nav-service .contacts-link {
+  margin-right: -4px;
+}
 /* Слайдер */
 .slider-top {
   position: relative;
@@ -615,7 +618,7 @@ html {
 .slider-top-list {
   margin: 0;
   margin-right: 60px;
-  margin-left: 60px;
+  margin-left: 32px;
   padding: 0;
 
   list-style: none;
@@ -635,10 +638,21 @@ html {
 
 .slider-image {
   flex-shrink: 0;
-  width: 440px;
+  width: 560px;
+}
+
+.slide-1-image {
   padding-top: 1px;
-  padding-right: 20px;
-  padding-left: 30px;
+  padding-left: 58px;
+}
+
+.slide-2-image {
+  padding-top: 12px;
+  padding-left: 84px;
+}
+
+.slide-3-image {
+  padding-top: 66px;
 }
 
 .item-description {
@@ -646,16 +660,16 @@ html {
   z-index: 1;
 
   flex-shrink: 0;
-  width: 660px;
-  padding-right: 30px;
-  padding-left: 100px;
+  padding-right: 40px;
+  padding-left: 8px;
+  width: 580px;
 }
 
 .item-description::before {
   content: "";
   position: absolute;
   top: 38px;
-  left: 100px;
+  left: 9px;
 
   width: 100px;
   height: 7px;
@@ -668,7 +682,7 @@ html {
   z-index: 2;
 
   margin-top: 24px;
-  margin-bottom: 19.2px;
+  margin-bottom: 10px;
   padding: 0;
 
   font-weight: 800;
@@ -681,14 +695,16 @@ html {
 }
 
 .slide-text {
+  margin-top: -21px;
   margin-bottom: 49px;
   padding-right: 40px;
+  white-space: pre-line;
 }
 
 .slide-number {
   position: absolute;
   top: -11px;
-  right: 48px;
+  right: 61px;
   z-index: 2;
 
   font-weight: 800;
@@ -696,7 +712,7 @@ html {
   line-height: 179.2px;
   font-family: "Gilroy","Arial", sans-serif;
   color: #ffffff;
-  letter-spacing: 0.51px;
+  letter-spacing: 0.36px;
 }
 
 .slider-item .slider-link {
@@ -756,6 +772,9 @@ html {
 .table-character td {
   margin: 0;
   padding: 0;
+  padding-right: 74px;
+
+  letter-spacing: 0.13px;
 
   font-weight: 300;
   font-size: 36px;
@@ -768,21 +787,18 @@ html {
 .table-character th {
   margin: 0;
   padding: 0;
+  padding-top: 2px;
 
   font-weight: 300;
   font-size: 13px;
   line-height: 30px;
   font-family: "Open Sans","Arial", sans-serif;
   color: #000000;
-  letter-spacing: 0.13px;
+  letter-spacing: normal;
 }
 
-.table-character td {
-  margin: 0;
-  padding: 0;
-  padding-right: 74px;
-
-  letter-spacing: 0.13px;
+.slide-number-3 td {
+  padding-right: 59px;
 }
 
 /* Блок товаров по категориям */
@@ -905,10 +921,11 @@ html {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 6.6px;
+  padding-left: 7.9px;
 
   text-align: center;
   color: #000000;
-
+  letter-spacing: 3.8px;
   cursor: pointer;
 }
 
@@ -980,6 +997,16 @@ html {
 .img-delivery {
   top: 11px;
   right: 7px;
+}
+
+.img-warranty {
+  top: -13px;
+  right: -13px;
+}
+
+.img-credit {
+  top: -13px;
+  right: 12px;
 }
 
 /* Бренды  */
@@ -1237,7 +1264,8 @@ html {
 }
 
 .footer-user-block-navigation a {
-  /* display: block; */
+  display: block;
+  margin-top: -4px;
   color: rgba(255, 255, 255, 0.7);
   letter-spacing: 0.15px;
 }
@@ -1282,7 +1310,6 @@ html {
   opacity: 0.6;
 }
 
-
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -1293,6 +1320,7 @@ html {
 }
 
 .footer-links a {
+  margin-top: 5px;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -1300,6 +1328,7 @@ html {
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+  display: block;
 }
 
 .footer-links a:hover,
@@ -1415,8 +1444,6 @@ html {
   opacity: 0.3;
 }
 
-/* Форма обратной связи поп-ап*/
-
 .modal-window {
   position: fixed;
   top: 135px;
@@ -1427,11 +1454,6 @@ html {
 
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
   transform: translateX(-50%);
-}
-
-/* Класс для открытия окна */
-.open-modal-window {
-  display: block;
 }
 
 .form-support {
@@ -1448,7 +1470,7 @@ html {
   width: 960px;
   padding-top: 93px;
   padding-right: 100px;
-  padding-bottom: 70px;
+  padding-bottom: 76px;
   padding-left: 100px;
 }
 
@@ -1467,7 +1489,7 @@ html {
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
   color: #000000;
-  letter-spacing: 2.15px;
+  letter-spacing: normal;
 }
 
 .form-write input {
@@ -1477,10 +1499,10 @@ html {
 .form-write input,
 .form-write textarea {
   width: 100%;
-  padding-top: 16px;
-  padding-right: 20px;
-  padding-bottom: 16px;
-  padding-left: 20px;
+  padding-top: 9px;
+  padding-right: 19px;
+  padding-bottom: 14px;
+  padding-left: 17px;
 
   font-weight: 400;
   font-size: 14px;
@@ -1497,17 +1519,34 @@ html {
 .form-write input:-ms-input-placeholder,
 .form-write textarea:-ms-input-placeholder {
   color: rgba(70, 70, 70, 0.4);
+  letter-spacing: 0.53px;
 }
 
 .form-write input::-webkit-input-placeholder,
 .form-write textarea::-webkit-input-placeholder {
   color: rgba(70, 70, 70, 0.4);
+  letter-spacing: 0.53px;
 }
 
 .form-write input::-moz-placeholder,
 .form-write textarea::-moz-placeholder {
   color: rgba(70, 70, 70, 0.4);
+  letter-spacing: 0.53px;
 }
+
+.form-write input::-moz-placeholder {
+  letter-spacing: normal;
+}
+
+.form-write input::-webkit-input-placeholder {
+  letter-spacing: normal;
+}
+
+.form-write input:-ms-input-placeholder {
+  letter-spacing: normal;
+}
+
+
 
 .form-write textarea {
   width: 760px;
@@ -1525,7 +1564,7 @@ html {
 }
 
 .form-write label[for="messege"] {
-  margin-top: 30px;
+  margin-top: 33px;
 }
 
 /* Стилизация полей форм обратной связи */
@@ -1562,9 +1601,9 @@ html {
 }
 
 .form-support .btn-decoration {
-  margin-top: 50px;
+  margin-top: 36px;
   padding-top: 10px;
-  padding-right: 36px;
+  padding-right: 33px;
   padding-bottom: 10px;
   padding-left: 34px;
 }
@@ -1622,13 +1661,17 @@ html {
 /* Карта поп-ап */
 .modal-map {
   display: none;
-  width: 991px;
+  width: 960px;
   height: auto;;
 }
 
 .modal-map img {
   margin: 0;
   padding: 0;
+}
+
+.open-modal-window {
+  display: block;
 }
 
 
