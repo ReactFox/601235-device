@@ -98,7 +98,7 @@ html {
   margin: 0 auto;
   margin-top: 18px;
   padding-right: 60px;
-  padding-bottom: 46px;
+  padding-bottom: 47px;
   padding-left: 60px;
 }
 
@@ -137,7 +137,7 @@ html {
 
 .search-form-and-user-navavigation {
   display: flex;
-  margin-bottom: 37px;
+  margin-bottom: 30px;
 }
 
 /* Форма поиска по сайту */
@@ -156,7 +156,8 @@ html {
 
 .search-form-and-user-navavigation input[type="search"] {
   width: 355px;
-  padding-left: 40px;
+  padding-left: 38px;
+  padding-top: 0;
 
   font-weight: 300;
   font-size: 15px;
@@ -358,8 +359,8 @@ html {
 }
 
 .search-form-and-user-navavigation form::after {
-  top: 10px;
-  left: 4px;
+  top: 7.5px;
+  left: 3.5px;
 
   width: 16px;
   height: 16px;
@@ -380,7 +381,7 @@ html {
 
 .user-block-navigation .compare::before {
   top: 6px;
-  left: 0;
+  left: 6px;
 
   width: 10px;
   height: 10px;
@@ -390,7 +391,7 @@ html {
 
 .user-block-navigation .cort::before {
   top: 3.5px;
-  left: 0;
+  left: 4.7px;
 
   width: 12px;
   height: 12px;
@@ -406,7 +407,6 @@ html {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-bottom: 32px;
 }
 
 .catalog {
@@ -567,14 +567,14 @@ html {
 
 .slider-button-list {
   position: absolute;
-  right: 100px;
-  bottom: 35.1%;
+  right: 116px;
+  bottom: 182px;
   z-index: 8;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 60px;
+  width: 65px;
   margin: 0;
   padding: 0;
 
@@ -588,7 +588,7 @@ html {
 .slider-button-list label::after {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 6.5px;
   left: 0;
 
   width: 12px;
@@ -610,7 +610,6 @@ html {
 .slider-top-list {
   margin: 0;
   margin-right: 60px;
-  margin-bottom: 100px;
   margin-left: 60px;
   padding: 0;
 
@@ -632,6 +631,7 @@ html {
 .slider-image {
   flex-shrink: 0;
   width: 440px;
+  padding-top: 1px;
   padding-right: 20px;
   padding-left: 30px;
 }
@@ -649,7 +649,7 @@ html {
 .item-description::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 38px;
   left: 100px;
 
   width: 100px;
@@ -660,17 +660,19 @@ html {
 
 .slider-item .slide-title {
   position: relative;
+  white-space: pre-line;
   z-index: 2;
+  padding: 0;
 
-  margin-top: 80px;
-  margin-bottom: 20px;
+  margin-top: 24px;
+  margin-bottom: 19.2px;
 
   font-weight: 800;
   font-size: 47px;
   line-height: 56px;
   font-family: "Gilroy","Arial", sans-serif;
   color: #000000;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.67px;
 }
 
 .slide-text {
@@ -681,7 +683,7 @@ html {
 .slide-number {
   position: absolute;
   top: -11px;
-  right: 46px;
+  right: 48px;
   z-index: 2;
 
   font-weight: 800;
@@ -689,12 +691,12 @@ html {
   line-height: 179.2px;
   font-family: "Gilroy","Arial", sans-serif;
   color: #ffffff;
-  letter-spacing: 0.36px;
+  letter-spacing: 0.51px;
 }
 
 .slider-item .slider-link {
   padding-top: 12px;
-  padding-right: 43px;
+  padding-right: 38px;
   padding-bottom: 12px;
   padding-left: 44px;
 }
@@ -1118,13 +1120,14 @@ html {
   padding-right: 22.7px;
   padding-bottom: 12px;
   padding-left: 22.7px;
+  /* width: 260px; */
 }
 
 .btn-contacts {
   padding-top: 12px;
-  padding-right: 41px;
+  padding-right: 22px;
   padding-bottom: 12px;
-  padding-left: 41px;
+  padding-left: 22px;
 }
 
 
@@ -1406,7 +1409,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy","Arial", sans-serif;
-  color: #000000;
+  color: #000;
   letter-spacing: 2.15px;
 }
 
@@ -1417,26 +1420,40 @@ html {
 .form-write input,
 .form-write textarea {
   width: 100%;
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-left: 20px;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   font-family: "Open Sans","Arial", sans-serif;
-  color: #000000;
+  /* color: rgba(70, 70, 70, 0.4); */
+  color: #464646;
   letter-spacing: 0.15px;
 
   background-color: #f2f2f2;
   border: 3px solid transparent;
 }
 
-.form-write input {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+.form-write input:-ms-input-placeholder,
+.form-write textarea:-ms-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.form-write input::-webkit-input-placeholder,
+.form-write textarea::-webkit-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.form-write input::-moz-placeholder,
+.form-write textarea::-moz-placeholder  {
+  color: rgba(70, 70, 70, 0.4);
 }
 
 .form-write textarea {
+
   width: 760px;
   min-height: 156px;
 
@@ -1713,7 +1730,7 @@ html {
   color: #000000;
 }
 
-/* .sorting-up-down {
+.sorting-up-down {
   display: flex;
   justify-content: space-between;
   min-width: 40px;
@@ -1723,7 +1740,7 @@ html {
   padding: 0;
 
   list-style: none;
-} */
+}
 
 .sorting-up,
 .sorting-down {
@@ -1893,6 +1910,21 @@ html {
   top: 21px;
   left: 130px;
 }
+
+.range-controls .toggle:hover,
+.range-controls .toggle:focus {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
 
 .range-controls .toggle:active {
   position: absolute;
