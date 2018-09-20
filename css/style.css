@@ -1795,7 +1795,7 @@ html {
 .sorting-up-down {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
   min-width: 40px;
   min-height: 10px;
   margin: 0;
@@ -1803,6 +1803,11 @@ html {
   padding: 0;
 
   list-style: none;
+}
+
+.sorting-up-down a {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .sorting-up,
@@ -1824,16 +1829,14 @@ html {
 }
 
 .sorting-up::before {
-  /* top: 15px; */
-  top: 0;
+  top: 10px;
   left: 0;
 
   background-image: url("../img/icon-up-dir.svg");
 }
 
 .sorting-down::before {
-  /* top: 15px; */
-  top: 0;
+  top: 10px;
   right: 0;
 
   background-image: url("../img/icon-down-dir.svg");
@@ -2053,12 +2056,21 @@ html {
 }
 
 
-.filter-list label:hover::before,
+/* .filter-list label:hover::before,
 .filter-list label:focus::before {
   opacity: 0.6;
 }
 
 .filter-list label:active::before {
+  opacity: 1;
+} */
+
+.filter-list input:focus + label,
+.filter-list input:hover + label {
+  opacity: 0.6;
+}
+
+.filter-list input:active + label  {
   opacity: 1;
 }
 
