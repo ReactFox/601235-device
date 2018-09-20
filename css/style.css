@@ -696,7 +696,6 @@ html {
   border: none;
 }
 
-
 .btn-decoration::after {
   content: "";
   position: absolute;
@@ -710,7 +709,6 @@ html {
   background-color: #f0c52e;
   transform: translateY(-50%);
 }
-
 
 .btn-decoration:hover,
 .btn-decoration:focus {
@@ -859,7 +857,6 @@ html {
   border-right: 7px solid black;
 }
 
-
 .navigation-item {
   position: relative;
   z-index: 1;
@@ -868,7 +865,6 @@ html {
   width: 160px;
   margin-bottom: 24px;
 }
-
 
 .features-navigation label {
   width: 100%;
@@ -882,7 +878,6 @@ html {
 
   cursor: pointer;
 }
-
 
 .delivery:checked ~ .features-navigation .first-item::after,
 .warranty:checked ~ .features-navigation .second-item::after,
@@ -1239,7 +1234,6 @@ html {
   margin-right: 9px;
 }
 
-
 .index-footer .compare {
   margin-right: 7px;
 }
@@ -1270,7 +1264,6 @@ html {
   margin-right: 37px;
 }
 
-
 .index-footer .footer-links,
 .catalog-footer .footer-links {
   margin-left: -36px;
@@ -1288,7 +1281,6 @@ html {
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
-
 
 .index-footer .footer-delivery,
 .catalog-footer .footer-delivery {
@@ -1515,8 +1507,6 @@ html {
 .form-write input:-ms-input-placeholder {
   letter-spacing: normal;
 }
-
-
 
 .form-write textarea {
   width: 760px;
@@ -2031,7 +2021,6 @@ html {
   background-image: url("../img/checkbox-off.svg");
 }
 
-
 .filter-list input[type="checkbox"]:checked + label::before {
   width: 27px;
   height: 23px;
@@ -2066,7 +2055,6 @@ html {
 .filter-list label:active::before {
   opacity: 1;
 }
-
 
 .filter-search button {
   position: relative;
@@ -2123,9 +2111,10 @@ html {
   z-index: 0;
 
   display: inline-block;
-  width: 72px;
-  height: 72px;
-  padding-top: 21px;
+  width: 60px;
+  height: 60px;
+  padding-top: 13px;
+  padding-left: 2px;
 
   font-weight: 800;
   font-size: 14px;
@@ -2191,10 +2180,15 @@ html {
 }
 
 .product-option .product-in-cort {
+  margin-top: 40px;
+  margin-left: 7px;
+  margin-bottom: 4px;
   padding-top: 10px;
   padding-right: 40px;
   padding-bottom: 10px;
   padding-left: 36px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .product-option .product-in-cort:active {
@@ -2202,6 +2196,8 @@ html {
 }
 
 .product-option .add-to-compare {
+  display: inline-block;
+  vertical-align: top;
   font-size: 13px;
   line-height: 36px;
   color: rgba(0, 0, 0, 0.5);
