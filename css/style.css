@@ -125,9 +125,10 @@ html {
 
 .catalog-header .logo-top {
   display: inline-block;
-  vertical-align: middle;
   margin-top: 2px;
   margin-left: 57.6px;
+
+  vertical-align: middle;
 }
 
 .catalog-header .logo-top:hover,
@@ -284,9 +285,9 @@ html {
 }
 
 .user-block-navigation a {
-  display: block;
   position: relative;
 
+  display: block;
   padding-left: 27px;
 
   font-weight: 300;
@@ -1268,8 +1269,8 @@ html {
 
 .index-footer .footer-links,
 .catalog-footer .footer-links {
-  margin-left: -15px;
   width: 452px;
+  margin-left: -15px;
 }
 
 .footer-links a {
@@ -1794,8 +1795,8 @@ html {
 
 .sorting-up-down {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   min-width: 40px;
   min-height: 10px;
   margin: 0;
@@ -1807,6 +1808,7 @@ html {
 
 .sorting-up-down a {
   display: inline-block;
+
   vertical-align: top;
 }
 
@@ -2055,22 +2057,21 @@ html {
   background-image: url("../img/radio-on.svg");
 }
 
-
-/* .filter-list label:hover::before,
+.filter-list label:hover::before,
 .filter-list label:focus::before {
   opacity: 0.6;
 }
 
 .filter-list label:active::before {
   opacity: 1;
-} */
+}
 
 .filter-list input:focus + label,
 .filter-list input:hover + label {
   opacity: 0.6;
 }
 
-.filter-list input:active + label  {
+.filter-list input:active + label {
   opacity: 1;
 }
 
@@ -2198,14 +2199,15 @@ html {
 }
 
 .product-option .product-in-cort {
+  display: inline-block;
   margin-top: 40px;
-  margin-left: 7px;
   margin-bottom: 4px;
+  margin-left: 7px;
   padding-top: 10px;
   padding-right: 40px;
   padding-bottom: 10px;
   padding-left: 36px;
-  display: inline-block;
+
   vertical-align: top;
 }
 
@@ -2215,9 +2217,10 @@ html {
 
 .product-option .add-to-compare {
   display: inline-block;
-  vertical-align: top;
+
   font-size: 13px;
   line-height: 36px;
+  vertical-align: top;
   color: rgba(0, 0, 0, 0.5);
 }
 
