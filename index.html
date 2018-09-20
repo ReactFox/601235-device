@@ -10,7 +10,6 @@
 
 <body>
   <h1 class="visually-hidden">Магазин Device главная страница</h1>
-
   <header class="index-header container">
     <a class="logo-top">Device</a>
     <div class="wraper-header">
@@ -210,12 +209,12 @@
 
     <section class="product-category container">
       <h2 class="visually-hidden">Выбор товаров магазина по категориям</h2>
-
       <ul class="product-list">
         <li class="product-item">
           <a class="product-category-link" href="#">
             <span class="wraper-img">
-              <img src="img/popular-1.svg" alt="Лого Виртуальная реальность"
+              <img src="img/popular-1.svg" alt="Лого Виртуальная
+                реальность"
                 width="97" height="55">
             </span>
             Виртуальная реальность
@@ -272,20 +271,18 @@
             Квадрокоптеры
           </a>
         </li>
-
       </ul>
     </section>
 
     <section class="features">
       <div class="container">
         <h2 class="visually-hidden">Преимущества покупки у нас</h2>
-        <!-- Поля навигации в разделе преимущества -->
         <input class="delivery" type="radio" name="radio-features"
           id="delivery">
         <input class="warranty" type="radio" name="radio-features"
-          id="warranty">
+          id="warranty" checked>
         <input class="credit" type="radio" name="radio-features"
-          id="credit" checked>
+          id="credit">
 
         <ul class="features-navigation">
           <li class="navigation-item first-item btn-decoration">
@@ -474,9 +471,15 @@
         <p class="adress" aria-label="Наш адрес">г. Москва, ул. Строителей, 15</p>
         <ul class="footer-links" aria-label="Навигация по разделу дополнительной
             информации для пользователя внизу страницы">
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+            <li>
+              <a class="footer-delivery" href="delivery.html">Доставка</a>
+            </li>
+            <li>
+              <a class="footer-warranty" href="warranty.html">Гарантия</a>
+            </li>
+            <li>
+              <a class="footer-contacts" href="contacts.html">Контакты</a>
+            </li>
         </ul>
 
         <a class="contact-number" aria-label="Наш телефон">
@@ -543,7 +546,6 @@
     </div>
   </footer>
 
-  <!-- Форма для отправки ответа -->
   <section class="form-support modal-window">
     <h2 class="visually-hidden">Форма обращений</h2>
     <form class="form-write" action="write-us.html" method="post">
@@ -567,7 +569,6 @@
     </form>
   </section>
 
-  <!-- Секция всплывающего окна, потом скроем-->
   <section class="modal-map modal-window">
     <h2 class="visually-hidden">Интерактивная карта</h2>
     <img class="img-map-bottom" src="img/map-big-min.jpg"
