@@ -125,6 +125,7 @@ html {
 
 .catalog-header .logo-top {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 2px;
   margin-left: 57.6px;
 }
@@ -144,7 +145,7 @@ html {
 }
 
 .catalog-header .wraper-header {
-  margin-top: 15px;
+  margin-top: 21px;
 }
 
 .search-form-and-user-navavigation form {
@@ -279,10 +280,11 @@ html {
 }
 
 .catalog-header .compare {
-  margin-right: 35px;
+  margin-right: 33px;
 }
 
 .user-block-navigation a {
+  display: block;
   position: relative;
 
   padding-left: 27px;
@@ -326,7 +328,7 @@ html {
 
 .user-block-navigation .enter::before,
 .user-block-navigation .sing-in::before {
-  top: 5px;
+  top: 9px;
   left: 0;
 
   width: 13px;
@@ -336,7 +338,7 @@ html {
 }
 
 .user-block-navigation .compare::before {
-  top: 6px;
+  top: 11px;
   left: 6px;
 
   width: 10px;
@@ -346,7 +348,7 @@ html {
 }
 
 .user-block-navigation .cort::before {
-  top: 3.5px;
+  top: 8.5px;
   left: 4.7px;
 
   width: 12px;
@@ -1266,7 +1268,8 @@ html {
 
 .index-footer .footer-links,
 .catalog-footer .footer-links {
-  margin-left: -36px;
+  margin-left: -15px;
+  width: 452px;
 }
 
 .footer-links a {
@@ -1792,6 +1795,7 @@ html {
 .sorting-up-down {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-width: 40px;
   min-height: 10px;
   margin: 0;
@@ -1820,14 +1824,16 @@ html {
 }
 
 .sorting-up::before {
-  top: 15px;
+  /* top: 15px; */
+  top: 0;
   left: 0;
 
   background-image: url("../img/icon-up-dir.svg");
 }
 
 .sorting-down::before {
-  top: 15px;
+  /* top: 15px; */
+  top: 0;
   right: 0;
 
   background-image: url("../img/icon-down-dir.svg");
@@ -1937,7 +1943,7 @@ html {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 57.4%;
   height: 2px;
 
   background-color: #91c92f;
