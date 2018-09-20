@@ -714,10 +714,7 @@ html {
 }
 
 .btn-decoration:hover,
-.btn-decoration:focus,
-.delivery:focus ~ .features-navigation .first-item,
-.warranty:focus ~ .features-navigation .second-item,
-.credit:focus ~ .features-navigation .third-item {
+.btn-decoration:focus {
   background-color: #f0c52e;
 }
 
@@ -832,10 +829,6 @@ html {
   background-image: linear-gradient(to bottom, #ffffff 100px, #e5e5e5 100px);
 }
 
-/* .features input[type="radio"]:focus {
-
-} */
-
 .features .container {
   display: flex;
 }
@@ -879,7 +872,6 @@ html {
   padding-left: 7.9px;
 
   text-align: center;
-  /* color: #000000; */
   letter-spacing: 3.8px;
 
   cursor: pointer;
@@ -915,6 +907,7 @@ html {
 .features .credit:checked ~ .content-feature-navigation .slide-3 {
   display: block;
 }
+
 
 .content-feature-navigation {
   width: 820px;
