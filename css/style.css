@@ -1325,7 +1325,11 @@ html {
 .row-bottom {
   position: relative;
 
-  padding-bottom: 15px;
+  padding-bottom: 28px;
+}
+
+.catalog-footer .row-bottom {
+  padding-bottom: 53px;
 }
 
 .row-bottom::before {
